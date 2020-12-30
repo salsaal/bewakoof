@@ -21,7 +21,7 @@ export default class App extends React.Component {
           type: "men",
           name: 'Mens black',
           price:'₹250',
-          size:'xl'
+        
         },
         {
           id: 2,
