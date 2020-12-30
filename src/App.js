@@ -18,18 +18,20 @@ export default class App extends React.Component {
           id: 1,
           image: men1,
           color: "black",
-          type: "men",
+          for: "men",
           name: 'Mens black',
           price:'₹250',
+          type:"t-shirt"
         
         },
         {
           id: 2,
           image: men2,
           color: "white",
-          type: "men",
+          for: "men",
           name: 'Mens white',
           price:'₹240',
+          type:"t-shirt"
         },
       ],
     };
