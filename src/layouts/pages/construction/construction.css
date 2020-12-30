@@ -41,5 +41,7 @@
 }
 .productpage .items{
     display: flex;
+    position: relative;
     width: 100%;
+    justify-content: space-between;
 }
