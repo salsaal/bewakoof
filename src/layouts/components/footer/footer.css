@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    padding: 75px 100px;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer img{
+    width: 120px;
+    margin-bottom: 25px;
+}
+footer .services{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: capitalize;
+}
+footer .services .service h3{
+    color: #fdd835;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .services .service a{
+    color: #fff;
+}
+footer .services .service i{
+    cursor: pointer;
+    margin: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+footer .services .service input{
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #fdd835;
+    color: rgba(255, 255, 255, .7)
+}
+footer .services .service button{
+    padding: 10px 20px;
+        background-color: #fdd835;
+        height: 40px;
+        /* padding-left: 20px; */
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, .5);
+        border: 1px solid #fdd835;
+}
+footer .services .service input,
+footer .services .service button:focus{
+    outline: none;
+}
+footer .payment{
+    margin-top: 50px;
+    display: flex;
+    width: 75%;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+footer .payment div{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    color: rgba(255, 255, 255, .7)
+}
+footer .payment div p{
+    font-size: 14px;
+}
+footer .payment div h3{
+    color: #fdd835;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+footer .payment div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .7);
+    margin:5px;
+}
+footer .payment div a i{
+    margin-right: 10px;
+}
+footer .payment div div{
+    display: flex;
+    flex-direction: row;
+}
+footer .payment div .pay{
+    width: 75%;
+}
+footer .line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .7);
+}
+footer .category{
+    padding: 50px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+footer .category .type{
+    width: 25%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .category .type h1{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Lemonada', cursive;
+}
+footer .category .type a{
+    font-style: italic;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+footer .category .type a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer .category .type:last-child a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0px 0;
+    letter-spacing: .5px;
+    font-family: 'Lemonada', cursive;
+    color: #51cccc;
+    
+}
+footer .about{
+    width: 100%;
+    color: rgba(255, 255, 255, .7);
+}
+footer .about h2{
+    text-align: left;
+    margin:15px 0;
+}
+footer .about p::selection,h2::selection{
+   background-color: #fdd835;
+}
+footer .about p{
+    font-size: 17px;
+    text-align: justify;
+}

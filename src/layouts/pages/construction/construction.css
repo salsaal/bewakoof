@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.productpage{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+.productpage .links{
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .5);
+}
+.productpage .searchresult{
+    margin-top: 35px;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 500;
+    font-size: 27px;
+    padding: 5px;
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+}
+.productpage .searchresult:after{
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    width: 12%;
+    background-color: #fbd139;
+    height: 2px;
+
+}
+.productpage .searchresult span{
+    font-weight: 400;
+}
+.productpage .items{
+    display: flex;
+    width: 100%;
+}

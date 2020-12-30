@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.brandcontainer{
+    width:100%;
+    margin: 30px 0;
+    font-family: 'Orbitron', sans-serif;
+}
+.brandcontainer h3{
+    font-weight: 500;
+}
+.brandcontainer h1{
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+.brandimgcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.brandimgcontainer a{
+    width: 47%;
+    margin:30px 0 15px;
+}
+.brandimgcontainer a.smallbrand{
+    width: 30%;
+}
+.brandimgcontainer a img.smallbrandimg{
+    width: 100%;
+}
+.brandimgcontainer a img{
+    width: 100%;
+}

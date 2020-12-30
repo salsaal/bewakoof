@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cardlist{
+    display: flex;
+    width: 70%;
+}

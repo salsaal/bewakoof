@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whole{
+    width: 85%;
+    margin: 30px auto;
+}
+.whole .wideimg{
+    width: 100%;
+    margin: 40px 0;
+}
+.whole .bigcontainer{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.whole .bigcontainer a{
+    width: 48%;
+    cursor: pointer;
+}
+.whole .bigcontainer img{
+    width: 100%;
+}

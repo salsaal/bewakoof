@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.filter{
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.filter .title{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.filter .filter-item{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+.filter .filter-heading{
+    text-transform: capitalize;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+
+}
+.filter #rotate{
+    transform: rotate(0deg);
+}
+.filter .filter-heading i{
+    transition: .2s;
+    transform: rotate(180deg);
+}
+.filter .filter-item .filter-options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.filter .filter-item .close{
+     display: none;
+}
+.filter .filter-item .color-options{
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.filter .filter-item .color-options .color-picker{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: red;
+    border: .5px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.filter .filter-item .color-options .color-picker.red{
+    background-color: red;
+}
+.filter .filter-item .color-options .color-picker.blue{
+    background-color: blue;
+}
+.filter .filter-item .color-options .color-picker.black{
+    background-color: #000;
+}
+.filter .filter-item .color-options .color-picker.gray{
+    background-color: gray;
+}
+.filter .filter-item .color-options .color-picker.green{
+    background-color: green;
+}
+.filter .filter-item .filter-options h5{
+    font-size: 13px;
+    font-weight: 500;
+    color:rgba(0, 0, 0, .5) ;
+    transition: .2s;
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 3px 0;
+}
+.filter .filter-item .filter-options h5:hover{
+    background-color: rgba(0, 0, 0, .03);
+}

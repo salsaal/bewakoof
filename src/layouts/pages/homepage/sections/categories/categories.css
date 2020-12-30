@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.categories{
+    width: 100%;
+}
+.categories .part{
+    width: 100%;
+    margin: 30px 0;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.categories .part h3{
+    font-weight: 500;
+}
+.categories .part h1{
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+.categories .part a{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(15, 146, 146);
+    font-size: 1.2em;
+    text-decoration: none;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categories .part .catimgcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.categories .part .catimgcontainer a{
+    width: 15%;
+}
+.categories .part .catimgcontainer img{
+    width: 100%;
+}
