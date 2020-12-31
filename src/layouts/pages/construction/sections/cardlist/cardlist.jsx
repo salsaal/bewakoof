@@ -6,8 +6,9 @@ export  default class Cardlist extends React.Component{
         return(
             <div className="cardlist">
                 {
-                    this.props.products.map(item =>(
+                   this.props.products.map(item =>(
                         <Card key={item.id} products={item} />
+
                     ))
                 }
             </div>

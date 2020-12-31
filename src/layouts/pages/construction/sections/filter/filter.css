@@ -87,7 +87,7 @@
 .filter .filter-item .color-options .color-picker.green{
     background-color: green;
 }
-.filter .filter-item .filter-options h5{
+.filter .filter-item .filter-options input{
     font-size: 13px;
     font-weight: 500;
     color:rgba(0, 0, 0, .5) ;
@@ -96,7 +96,12 @@
     text-align: left;
     text-transform: capitalize;
     margin: 3px 0;
+    background-color: #fff;
+    border: none;
 }
-.filter .filter-item .filter-options h5:hover{
+.filter .filter-item .filter-options input:focus{
+    outline: none;
+}
+.filter .filter-item .filter-options input:hover{
     background-color: rgba(0, 0, 0, .03);
 }

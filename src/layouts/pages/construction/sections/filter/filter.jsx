@@ -25,11 +25,29 @@ export default class Filter extends React.Component {
             category <i className="fas fa-caret-down" id={this.state.cat?'rotate':""}></i>
           </h2>
           <div className={this.state.cat ? "filter-options":"close"}>
-            <h5>T-Shirt</h5>
-            <h5>Jacket</h5>
-            <h5> Hoodies</h5>
-            <h5> Shirt</h5>
-            <h5>Kurta</h5>
+            <input type='button' value="T-Shirt" onClick={(e)=>{
+                this.props.filter(e.target.value)
+            }}></input>
+             <input type='button' value="jackets" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.filter(e.target.value)
+
+            }}></input>
+             <input type='button' value="hoodies" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.filter(e.target.value)
+
+            }}></input>
+             <input type='button' value="Shirt" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.filter(e.target.value)
+
+            }}></input>
+             <input type='button' value="kurta" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.filter(e.target.value)
+
+            }}></input>
           </div>
         </div>
         <div className="filter-item">
@@ -42,11 +60,32 @@ export default class Filter extends React.Component {
           </h2>
           <div className={this.state.size ? "filter-options":"close"}>
 
-            <h5>S</h5>
-            <h5>M</h5>
-            <h5>L</h5>
-            <h5>XL</h5>
-            <h5>XXL</h5>
+          <input type='button' value="s" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.sizeFilter(e.target.value)
+
+
+            }}></input>
+             <input type='button' value="m" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.sizeFilter(e.target.value)
+
+            }}></input>
+             <input type='button' value="l" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.sizeFilter(e.target.value)
+
+            }}></input>
+             <input type='button' value="xL" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.sizeFilter(e.target.value)
+
+            }}></input>
+            <input type='button' value="xXL" onClick={(e)=>{
+                console.log(e.target.value)
+                this.props.sizeFilter(e.target.value)
+
+            }}></input>
           </div>
         </div>
         <div className="filter-item">

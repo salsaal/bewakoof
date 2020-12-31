@@ -6,8 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 250px;
-    margin: 20px;
+    width: 230px;
     cursor: pointer;
     position: relative;
 }
@@ -17,22 +16,24 @@
     overflow: hidden;
     position: relative;
 }
-.card .card-img-cony:hover .flash{
-    animation: flash 1.5s ;
-}
+
 .card .card-img-cony .flash{
     position: absolute;
-    width: 00%;
-    height: 0%;
-    background-color: rgba(255, 255, 255, .0);
+    width: 100%;
+    height: 100%;
+}
+.card .card-img-cony:hover .flash{
+    animation: flash 1.5s ;
 }
 @keyframes flash{
     from{
         width: 100%;
+        height: 100%;
     background-color: rgba(255, 255, 255, .9);
     }
     to{
         width: 100%;
+        height: 100%;
     background-color: rgba(255, 255, 255, .0);
 
     }
@@ -40,10 +41,6 @@
 .card img{
     height: 100%;
     width: 100%;
-}
-.card img:hover{
-    transform: scale(3);
-
 }
 .card h5{
     font-weight: 700;
