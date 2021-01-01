@@ -42,18 +42,18 @@ export default class App extends React.Component {
           for: "men",
           type:"t-shirt",
           name: 'Mens white',
-          price:'₹240',
+          price:'₹230',
           size:'m'
 
         },
         {
           id: 3,
           image: men3,
-          color: "black",
+          color: "red",
           for: "men",
           type:"jackets",
           name: 'Mens black',
-          price:'₹250',
+          price:'₹240',
           size:'l'
 
         
@@ -61,11 +61,11 @@ export default class App extends React.Component {
         {
           id: 4,
           image: men4,
-          color: "white",
+          color: "black",
           for: "men",
           type:"jackets",
           name: 'Mens white',
-          price:'₹240',
+          price:'₹340',
           size:'xl'
        
         },
@@ -76,29 +76,29 @@ export default class App extends React.Component {
           for: "men",
           type:"hoodies",
           name: 'Mens black',
-          price:'₹250',
+          price:'₹350',
           size:'xxl'
 
         },
         {
           id: 6,
           image: men6,
-          color: "white",
+          color: "green",
           for: "men",
           type:"hoodies",
           name: 'Mens white',
-          price:'₹240',
+          price:'₹210',
           size:'s'
 
         },
         {
           id: 7,
           image: men7,
-          color: "black",
+          color: "green",
           for: "men",
           type:"shirt",
           name: 'Mens black',
-          price:'₹250',
+          price:'₹280',
           size:'m'
 
         
@@ -106,21 +106,21 @@ export default class App extends React.Component {
         {
           id: 8,
           image: men8,
-          color: "white",
+          color: "black",
           for: "men",
           type:"shirt",
           name: 'Mens white',
-          price:'₹240',
+          price:'₹265',
           size:'l'
         },
         {
           id: 9,
           image: men9,
-          color: "black",
+          color: "gray",
           for: "men",
           type:"kurta",
           name: 'Mens black',
-          price:'₹250',
+          price:'₹320',
           size:'xl'
 
         
@@ -128,18 +128,20 @@ export default class App extends React.Component {
         {
           id: 10,
           image: men10,
-          color: "white",
+          color: "red",
           for: "men",
           type:"kurta",
           name: 'Mens white',
-          price:'₹240',
+          price:'₹190',
           size:'xxl'
 
         },
       ],
       filteredItems:[],
       sizeFilteredItems:[],
-      check:true
+      colorFilteredItems:[],
+      check:true,
+      color:true,
     };
   }
   render() {
@@ -164,21 +166,55 @@ export default class App extends React.Component {
       this.state.products.forEach(product=>{
         if(product.size.toLocaleLowerCase()===item.toLocaleLowerCase())
         {
+        
           myarr.push(product)
           this.setState({
             sizeFilteredItems:myarr
           })
+
           this.setState({check:false})
+          console.log(this.state.check)
         }
       })
-      console.log(this.state.check ?this.state.products: this.state.filteredItems)
+      console.log(this.state.check ?this.state.products: this.state.sizeFilteredItems)
      }
-     let finalFilter=[...this.state.filteredItems,...this.state.sizeFilteredItems]
+    
+
+
+     const handleColorFilter=(item)=>{
+      console.log(item)
+      let myarray=[]
+      this.state.products.forEach(product=>{
+        if(product.color.toLocaleLowerCase()===item.toLocaleLowerCase())
+        {
+          myarray.push(product)
+          console.log(myarray)
+          this.setState({
+            colorFilteredItems:myarray
+          }
+          )
+         this.setState({
+           check:false,
+         }
+         )
+        }
+      })
+      console.log(this.state.check ?this.state.products: this.state.colorFilteredItems)
+     }
      
+    
+     let finalFilter=[...this.state.filteredItems,...this.state.sizeFilteredItems,...this.state.colorFilteredItems]
      console.log(finalFilter)
-     var newArray = finalFilter.filter(function(elem, pos) {
-      return finalFilter.indexOf(elem) == pos;
+     finalFilter = finalFilter.filter(function(elem, pos) {
+      return finalFilter.indexOf(elem) === pos;
+      
 });
+const sort=()=>{
+ finalFilter= finalFilter.sort((a, b) => (a.price > b.price) ? 1 : -1)
+  return finalFilter;
+ }
+ console.log(finalFilter)
+
     // handleFilter()
     return (
       <div className="App">
@@ -187,7 +223,7 @@ export default class App extends React.Component {
           <Route exact path="/" component={Homepage} />
           <Route
             path="/construction"
-            render={(props) => <Construction products={this.state.check ? this.state.products:newArray} filter={handleFilter} sizeFilter={handleSizeFilter}/>}
+            render={(props) => <Construction products={this.state.check ? this.state.products:finalFilter} filter={handleFilter} sizeFilter={handleSizeFilter} colorFilter={handleColorFilter} sort={sort}/>}
           />
         </Switch>
         <Footer />

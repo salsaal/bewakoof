@@ -98,11 +98,22 @@ export default class Filter extends React.Component {
           </h2>
           <div className={this.state.color ? "color-options":"close"}>
 
-           <div className="color-picker red"></div>
-           <div className="color-picker blue"></div>
-           <div className="color-picker black"></div>
-           <div className="color-picker gray"></div>
-           <div className="color-picker green"></div>
+           <input type='button' className="color-picker red" name="red" onClick={(e)=>{
+             console.log(e.target.name)
+             this.props.colorFilter(e.target.name)
+           }}></input>
+           <input type='button' className="color-picker black" name="black" onClick={(e)=>{
+             console.log(e.target.name)
+             this.props.colorFilter(e.target.name)
+           }}></input>
+          <input type='button' className="color-picker gray" name="gray" onClick={(e)=>{
+             console.log(e.target.name)
+             this.props.colorFilter(e.target.name)
+           }}></input>
+           <input type='button' className="color-picker green" name="green" onClick={(e)=>{
+             console.log(e.target.name)
+             this.props.colorFilter(e.target.name)
+           }}></input>
           </div>
         </div>
         <div className="filter-item">
@@ -114,7 +125,10 @@ export default class Filter extends React.Component {
             sort <i className="fas fa-caret-down"id={this.state.sort?'rotate':""}></i>
           </h2>
           <div className={this.state.sort ? "filter-options":"close"}>
-            <h5>price :high to low</h5>
+            <input type='button' onClick={(e)=>{
+              console.log(e.target.value)
+              this.props.sort()
+            }} value="price:high to low"></input>
             <h5>low to high</h5>
           </div>
         </div>
