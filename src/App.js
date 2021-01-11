@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Cart from "../src/layouts/pages/cart/cart";
 import querypage from "./layouts/pages/querypage/querypage";
 import tribe from "../src/layouts/pages/tribe/tribe";
 import contactus from "../src/layouts/pages/contactus/contactus";
@@ -259,7 +260,7 @@ export default class App extends React.Component {
           size: "xxl",
         },
       ],
-      name: "",
+      name: "hello",
       filteredItems: [],
       sizeFilteredItems: [],
       colorFilteredItems: [],
@@ -285,9 +286,11 @@ export default class App extends React.Component {
       }
     };
     const name = (name) => {
-      this.setState({
-        name: name,
-      });
+      this.setState(
+        {
+          name: name,
+        }       
+      );
     };
     const clearFilter = () => {
       this.setState({
@@ -298,7 +301,7 @@ export default class App extends React.Component {
       });
       // alert('hihihih')
       finalFilter = [];
-      finalarray = ["hi"];
+      finalarray = [];
       console.log(finalarray);
     };
     const handleFilter = (item) => {
@@ -394,10 +397,9 @@ export default class App extends React.Component {
     // handleFilter()
     return (
       <div className="App">
-        <Navbar category={handleCategory} 
-                name={name}
-                />
+        <Navbar category={handleCategory} name={name} />
         <Switch>
+          <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
           <Route
             path="/construction"
