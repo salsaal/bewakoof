@@ -1,0 +1,62 @@
+.order{
+    display: flex;
+    width: 70%;
+    margin: 50px 0;
+}
+.order .leftitems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-right: 60px;
+    border-right: 1px solid rgba(0, 0, 0, .5);
+}
+.order .leftitems button{
+    background-color: transparent;
+    color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    border: none;
+    text-align: left;
+    padding: 10px 0;
+
+}
+.order .leftitems button:focus{
+    outline: none;
+    padding-left: 15px;
+    border-left: 5px solid #fbd245;
+    font-weight: bold;
+}
+
+.order .rightitems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 60px;
+}
+.order .rightitems h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.order .rightitems h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, .5);
+}
+.order .rightitems a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, .5);
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.order .rightitems a i{
+    transform: rotate(-90deg);
+}

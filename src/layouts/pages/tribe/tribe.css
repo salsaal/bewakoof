@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0 ;
+}
+.tribewhole{
+    width: 100%;
+    background-color: #000;
+    margin-top: 90px;
+}
+.tribe{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 90px;
+    color: #fff;
+}
+.tribe .intropart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tribe .leftintro{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tribe .leftintro h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 13px;
+}
+.tribe .leftintro img{
+    height: 80px;
+    margin: 3px 0;
+}
+.tribe .leftintro p{
+    font: 1.1em;
+}
+.tribe .leftintro button{
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 21px 36px;
+    display: block;
+    background: #fbd249;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    text-transform: uppercase;
+    /* padding: 10px 30px; */
+    font-size: 15px;
+    letter-spacing: 1.17px;
+    font-family: montserrat-bold,sans-serif;
+    margin-top: 13px;
+}
+.tribe .leftintro button:focus{
+    outline: none;
+}
+.tribe .intropart .rightimage{
+    width: 45%;
+}
+.tribe .intropart .rightimage img{
+    width: 100%;
+    cursor: pointer;
+}
+.tribe .productpricing{
+    margin-top: 50px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tribe .productpricing h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.tribe .productpricing .pricingcontainer{
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+.tribe .productpricing .pricingcontainer .pricing{
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #fbd249;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+.tribe .productpricing .pricingcontainer .pricing p{
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.tribe .productpricing .pricingcontainer .pricing h2{
+    color: #fbd249;
+    font-size: 23px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+}
+.tribe .productpricing .pricingcontainer .pricing .price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.tribe .productpricing .pricingcontainer .pricing .price span{
+    font-weight: 700;
+    font-size: 20px;
+}
+.tribe .productpricing .pricingcontainer .pricing .price button{
+    padding: 15px 27px;
+    background: #fbd249;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    text-transform: uppercase;
+    /* padding: 10px 30px; */
+    font-size: 15px;
+    letter-spacing: 1.17px;
+    font-family: montserrat-bold,sans-serif;
+    cursor: pointer;
+
+}
+.tribe .jointribe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.tribe .jointribe .joinheading{
+    width: 30%;
+    margin-bottom: 50px;
+}
+.tribe .jointribe h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fbd249;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 25px;
+
+}
+.tribe .jointribe h2 img{
+    height: 40px;
+    margin-right: 5px;
+}
+.tribe .jointribe .otherbenifits{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.tribe .jointribe .otherbenifits .benifitheading{
+    display: flex;
+    align-items: center;
+    color: #fbd249;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.tribe .jointribe .otherbenifits .benifitheading img{
+    height: 40px;
+}
+.tribe .jointribe .otherbenifits .benifitheading h2{
+    text-transform: uppercase;
+    margin: 0;
+}
+.tribe .jointribe .otherbenifits .benifitbox-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.tribe .jointribe .otherbenifits .benifitbox-container .benifitbox{
+    padding: 20px 80px;
+    border: 1px solid #fbd249;
+    border-radius: 10px;
+}
+.tribe .jointribe .otherbenifits .benifitbox-container .benifitbox h1{
+    font-size: 23px;
+    font-weight: 600;
+}

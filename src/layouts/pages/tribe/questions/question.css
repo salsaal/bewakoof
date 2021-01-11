@@ -1,0 +1,29 @@
+.questioncontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px ;
+    padding-bottom: 100px;
+}
+.questioncontainer h1{
+    margin-bottom: 50px;
+}
+.questioncontainer .questionans{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    border-bottom:1px solid  rgba(255, 255, 255, .5) ;
+}
+.questioncontainer .questionans h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.questioncontainer .questionans p{
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(255, 255, 255, .7);
+}

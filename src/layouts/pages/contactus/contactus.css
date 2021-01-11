@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contactus{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.contactus .query{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color:#fafafa ;
+}
+.contactus .query .searchquery{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.contactus .query .searchquery h1{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+.contactus .query .searchquery input{
+    width: 400px;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid #000 ;
+    padding-left: 50px;
+    font-size:18px ;
+    color: rgba(0, 0, 0,.5 );
+}
+.contactus .query .searchquery input:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgba(0, 0, 0,.5 );
+}
+.contactus .query .searchquery i{
+    position: absolute;
+    left: 25px;
+    top: 75px;
+    font-size: 20px;
+}
+.contactus .query img{
+    width: 30%;
+}
+.contactus .address{
+    padding: 30px 15px;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contactus .address h1{
+    font-size:25px;
+    padding-bottom: 5px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.contactus .address h1:after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 10px;
+    background-color: #fbd245;
+    width: 45%;
+    height: 2px;
+}
+.contactus .address p{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 2px;
+}
+.contactus .address p:last-child{
+    margin-top: 10px;
+}

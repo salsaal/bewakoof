@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 export default class Navbar extends React.Component {
-  render() {
+  render(props) {
     return (
       <nav>
         <div className="nav1">
@@ -12,10 +12,10 @@ export default class Navbar extends React.Component {
               <i class="fas fa-mobile"></i>
               Download App
             </a>
-            <a href="/construction">Tribe Membership</a>
+            <a href="/tribe">Tribe Membership</a>
           </div>
           <div className="contact">
-            <a href="/construction">contact Us</a>
+            <a href="/contact">contact Us</a>
             <a href="/construction">Track Order</a>
           </div>
         </div>
@@ -28,7 +28,12 @@ export default class Navbar extends React.Component {
               />
             </a>
             <li>
-              <a href="/construction">Men</a>
+              <a href="/construction" name="men"
+              onClick={(e)=>{
+                // console.log(e.target.name)
+                this.props.name(e.target.name)
+
+              }}>Men</a>
               <div className="dropdown">
                 <div className="cat">
                   <div className="item">
