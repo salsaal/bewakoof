@@ -62,3 +62,6 @@
 .card .heart:hover i{
     transform: scale(1.2);
 }
+.card .heart.added i{
+    /* transform: scale(2); */
+    color:#fbd249}

@@ -8,6 +8,18 @@ import men7 from "../assests/men7.jpg";
 import men8 from "../assests/men8.jpg";
 import men9 from "../assests/men9.jpg";
 import men10 from "../assests/men10.jpg";
+import women1 from "../assests/women1.jpg";
+import women2 from "../assests/women2.jpg";
+import women3 from "../assests/women3.jpg";
+import women4 from "../assests/women4.jpg";
+import women5 from "../assests/women5.jpg";
+import women6 from "../assests/women6.jpg";
+import women7 from "../assests/women7.jpg";
+import women8 from "../assests/women8.jpg";
+import women9 from "../assests/women9.jpg";
+import women10 from "../assests/women10.jpg";
+
+
 
 const products = [
         {
@@ -93,7 +105,7 @@ const products = [
         {
           id: 9,
           image: men9,
-          color: "gray",
+          color: "white",
           for: "men",
           type: "kurta",
           name: "Mens black",
@@ -109,6 +121,106 @@ const products = [
           name: "Mens white",
           price: "₹190",
           size: "xxl",
+        },
+        {
+          id: 11,
+          image: women1,
+          color: "black",
+          for: "women",
+          type: "t-shirt",
+          name: "womens  t-shirt-black",
+          price: "₹250",
+          size: "s",
+        },
+        {
+          id: 12,
+          image: women2,
+          color: "white",
+          for: "women",
+          type: "t-shirt",
+          name: "womens  t-shirt-white",
+          price: "₹250",
+          size: "m",
+        },
+        {
+          id: 13,
+          image: women3,
+          color: "green",
+          for: "women",
+          type: "jackets",
+          name: "womens  jackets-green",
+          price: "₹250",
+          size: "l",
+        },
+        {
+          id: 14,
+          image: women4,
+          color: "red",
+          for: "women",
+          type: "jackets",
+          name: "womens  jackets-red",
+          price: "₹250",
+          size: "xl",
+        },
+        {
+          id: 15,
+          image: women5,
+          color: "red",
+          for: "women",
+          type: "hoodies",
+          name: "womens  hoodies-red",
+          price: "₹250",
+          size: "xxl",
+        },
+        {
+          id: 16,
+          image: women6,
+          color: "black",
+          for: "women",
+          type: "hoodies",
+          name: "womens hoodies-black",
+          price: "₹250",
+          size: "xxl",
+        },
+        {
+          id: 17,
+          image: women7,
+          color: "red",
+          for: "women",
+          type: "shirt",
+          name: "womens  shirt-red",
+          price: "₹250",
+          size: "xl",
+        },
+        {
+          id: 18,
+          image: women8,
+          color: "green",
+          for: "women",
+          type: "shirt",
+          name: "womens  shirt-green",
+          price: "₹250",
+          size: "l",
+        },
+        {
+          id: 19,
+          image: women9,
+          color: "white",
+          for: "women",
+          type: "kurta",
+          name: "womens kurta-white",
+          price: "₹250",
+          size: "m",
+        },
+        {
+          id: 20,
+          image: women10,
+          color: "red",
+          for: "women",
+          type: "kurta",
+          name: "womens  kurta-red",
+          price: "₹250",
+          size: "s",
         },
 ]
       

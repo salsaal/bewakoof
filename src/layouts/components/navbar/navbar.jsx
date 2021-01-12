@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
           <div className="offers">
             <a href="/products/men">offers</a>
             <a href="">Fanbook</a>
-            <a href="/products/men">
+            <a href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof">
               <i class="fas fa-mobile"></i>
               Download App
             </a>
@@ -28,12 +28,7 @@ export default class Navbar extends React.Component {
               />
             </a>
             <li>
-              <a href="/products/men" name="men"
-              onClick={(e)=>{
-                // console.log(e.target.name)
-                this.props.name(e.target.name)
-
-              }}>Men</a>
+              <a href="/products/men">Men</a>
               <div className="dropdown">
                 <div className="cat">
                   <div className="item">
@@ -267,7 +262,7 @@ export default class Navbar extends React.Component {
               </div>
             </li>
             <li>
-              <a href="/products/men">Mobile Covers</a>
+              <a href="/products/mobile covers">Mobile Covers</a>
               <div className="dropdown">
                 <div className="cat">
                   <div className="item">
