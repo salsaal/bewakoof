@@ -4,13 +4,13 @@ import Cardlist from "./sections/cardlist/cardlist";
 import Filter from "./sections/filter/filter.jsx";
 export default class Constrution extends React.Component {
 
-  render(props) {
+  render() {
     return (
       <div className="productpage">
         <h4 className="links">home / men</h4>
         <h1 className="searchresult">
           {
-            this.props.name
+            this.props.match.params.id
           }
           <span className="no.results">({this.props.result})</span>{" "}
         </h1>

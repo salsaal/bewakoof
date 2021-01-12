@@ -21,6 +21,7 @@ import men9 from "../src/assests/men9.jpg";
 import men10 from "../src/assests/men10.jpg";
 import Contactus from "../src/layouts/pages/contactus/contactus";
 import Query from "./layouts/pages/querypage/querypage";
+import products from "./productsHub/products";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -260,7 +261,7 @@ export default class App extends React.Component {
           size: "xxl",
         },
       ],
-      name: "hello",
+      name: "",
       filteredItems: [],
       sizeFilteredItems: [],
       colorFilteredItems: [],
@@ -307,7 +308,8 @@ export default class App extends React.Component {
     const handleFilter = (item) => {
       console.log(item);
       let myarr = [];
-      this.state.products.forEach((product) => {
+      // here
+      products.forEach((product) => {
         if (product.type.toLocaleLowerCase() === item.toLocaleLowerCase()) {
           myarr.push(product);
           this.setState({
@@ -317,13 +319,13 @@ export default class App extends React.Component {
         }
       });
       console.log(
-        this.state.check ? this.state.products : this.state.filteredItems
+        this.state.check ? products : this.state.filteredItems
       );
     };
     const handleSizeFilter = (item) => {
       console.log(item);
       let myarr = [];
-      this.state.products.forEach((product) => {
+      products.forEach((product) => {
         if (product.size.toLocaleLowerCase() === item.toLocaleLowerCase()) {
           myarr.push(product);
           this.setState({
@@ -402,10 +404,10 @@ export default class App extends React.Component {
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
           <Route
-            path="/construction"
+            path="/products/:id"
             render={(props) => (
               <Construction
-                products={finalarray}
+                products={products}
                 filter={handleFilter}
                 sizeFilter={handleSizeFilter}
                 colorFilter={handleColorFilter}
@@ -413,6 +415,7 @@ export default class App extends React.Component {
                 clearFilter={clearFilter}
                 result={result}
                 name={this.state.name}
+                {...props}
               />
             )}
           />
