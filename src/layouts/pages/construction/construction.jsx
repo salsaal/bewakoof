@@ -69,7 +69,6 @@ export default class Constrution extends React.Component {
         }
       }
     });
-    console.log(prod);
     this.setState({
       filteredItems: prod,
     });
@@ -87,8 +86,11 @@ export default class Constrution extends React.Component {
         <div className="items">
           <Filter
             filter={this.handleFilter}
-            handleFilterName={(e) =>
-              this.setState({ [e.target.name]: e.target.value })
+            handleFilterName={(stateName, value) => {
+              console.log(stateName);
+              console.log(value);
+              this.setState({ [stateName]: value }, () => this.handleFilter());
+            }
             }
             // sizeFilter={handleSizeFilter}
             // colorFilter={handleColorFilter}

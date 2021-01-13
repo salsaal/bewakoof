@@ -22,7 +22,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.filter .title input[type='button']{
+.filter .title button{
     background-color: transparent;
     text-transform: capitalize;
     cursor: pointer;
@@ -30,10 +30,10 @@
     /* font-size: 16px; */
     color: teal;
 }
-.filter .title input[type='button']:hover{
+.filter .title button:hover{
     color:rgb(25, 241, 241) ;
 }
-.filter .title input[type='button']:focus{
+.filter .title button:focus{
     outline: none;
 }
 .filter .filter-item{
@@ -113,7 +113,7 @@
 .filter .filter-item .color-options .color-picker.green{
     background-color: green;
 }
-.filter .filter-item .filter-options input{
+.filter .filter-item .filter-options button{
     font-size: 13px;
     font-weight: 500;
     color:rgba(0, 0, 0, .5) ;
@@ -125,9 +125,9 @@
     background-color: #fff;
     border: none;
 }
-.filter .filter-item .filter-options input:focus{
+.filter .filter-item .filter-options button:focus{
     outline: none;
 }
-.filter .filter-item .filter-options input:hover{
+.filter .filter-item .filter-options button:hover{
     background-color: rgba(0, 0, 0, .03);
 }

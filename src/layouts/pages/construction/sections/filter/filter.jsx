@@ -20,9 +20,8 @@ export default class Filter extends React.Component {
       <div className="filter">
         <div className="title">
           <h5>filter</h5>
-          <input
+          <button
             type="button"
-            value="clear all"
             className={this.state.check ? "" : "close"}
             onClick={() => {
               this.props.clear();
@@ -34,7 +33,7 @@ export default class Filter extends React.Component {
                 checkc: false,
               });
             }}
-          />
+          >clear all</button>
         </div>
         <div className="filter-item">
           <h2
@@ -53,71 +52,56 @@ export default class Filter extends React.Component {
             ></i>
           </h2>
           <div className={this.state.cat ? "filter-options" : "close"}>
-            <input
+            <button
               type="button"
-              value="t-shirt"
-              name="category"
-              onClick={(e) => {
-                this.props.handleFilterName(e);
+              onClick={() => {
+                this.props.handleFilterName("category", "t-shirt");
                 this.setState({
                   check: true,
                   checkc: true,
                 });
-                this.props.filter();
               }}
-            ></input>
-            <input
+            >T-Shirt</button>
+            <button
               type="button"
-              value="jackets"
-              name="category"
-              onClick={(e) => {
-                this.props.handleFilterName(e);
+              onClick={() => {
+                this.props.handleFilterName("category", "jackets");
                 this.setState({
                   check: true,
                   checkc: true,
                 });
-                this.props.filter();
               }}
-            ></input>
-            <input
+            >jackets</button>
+            <button
               type="button"
-              value="hoodies"
-              name="category"
-              onClick={(e) => {
-                this.props.handleFilterName(e);
+              onClick={() => {
+                this.props.handleFilterName("category", "hoodies");
                 this.setState({
                   check: true,
                   checkc: true,
                 });
-                this.props.filter();
               }}
-            ></input>
-            <input
+            >hoodies</button>
+            <button
               type="button"
-              value="shirt"
-              name="category"
-              onClick={(e) => {
-                this.props.handleFilterName(e);
+              onClick={() => {
+                this.props.handleFilterName("category", "shirt");
                 this.setState({
                   check: true,
                   checkc: true,
                 });
-                this.props.filter();
               }}
-            ></input>
-            <input
+            >shirt</button>
+            <button
               type="button"
-              value="kurta"
-              name="category"
-              onClick={(e) => {
-                this.props.handleFilterName(e);
+              onClick={() => {
+                this.props.handleFilterName('category', 'kurta');
                 this.setState({
                   check: true,
                   checkc: true,
                 });
-                this.props.filter();
               }}
-            ></input>
+            >kurta</button>
           </div>
         </div>
         <div className="filter-item">
@@ -137,7 +121,7 @@ export default class Filter extends React.Component {
             ></i>
           </h2>
           <div className={this.state.size ? "filter-options" : "close"}>
-            <input
+            <button
               type="button"
               value="s"
               onClick={(e) => {
@@ -148,8 +132,8 @@ export default class Filter extends React.Component {
                   check: true,
                 });
               }}
-            ></input>
-            <input
+            >S</button>
+            <button
               type="button"
               value="m"
               onClick={(e) => {
@@ -160,8 +144,8 @@ export default class Filter extends React.Component {
                   check: true,
                 });
               }}
-            ></input>
-            <input
+            >M</button>
+            <button
               type="button"
               value="l"
               onClick={(e) => {
@@ -172,8 +156,8 @@ export default class Filter extends React.Component {
                   check: true,
                 });
               }}
-            ></input>
-            <input
+            >L</button>
+            <button
               type="button"
               value="xL"
               onClick={(e) => {
@@ -184,8 +168,8 @@ export default class Filter extends React.Component {
                   check: true,
                 });
               }}
-            ></input>
-            <input
+            >XL</button>
+            <button
               type="button"
               value="xXL"
               onClick={(e) => {
@@ -196,7 +180,7 @@ export default class Filter extends React.Component {
                   check: true,
                 });
               }}
-            ></input>
+            >XXL</button>
           </div>
         </div>
         <div className="filter-item">
@@ -216,10 +200,9 @@ export default class Filter extends React.Component {
             ></i>
           </h2>
           <div className={this.state.color ? "color-options" : "close"}>
-            <input
+            <button
               type="button"
               className="color-picker red"
-              name="red"
               onClick={(e) => {
                 console.log(e.target.name);
                 this.props.colorFilter(e.target.name);
@@ -228,11 +211,10 @@ export default class Filter extends React.Component {
                   checkco: true,
                 });
               }}
-            ></input>
-            <input
+            >red</button>
+            <button
               type="button"
               className="color-picker black"
-              name="black"
               onClick={(e) => {
                 console.log(e.target.name);
                 this.props.colorFilter(e.target.name);
@@ -241,11 +223,10 @@ export default class Filter extends React.Component {
                   checkco: true,
                 });
               }}
-            ></input>
-            <input
+            ></button>
+            <button
               type="button"
               className="color-picker gray"
-              name="white"
               onClick={(e) => {
                 console.log(e.target.name);
                 this.props.colorFilter(e.target.name);
@@ -254,11 +235,10 @@ export default class Filter extends React.Component {
                   checkco: true,
                 });
               }}
-            ></input>
-            <input
+            >white</button>
+            <button
               type="button"
               className="color-picker green"
-              name="green"
               onClick={(e) => {
                 console.log(e.target.name);
                 this.props.colorFilter(e.target.name);
@@ -267,7 +247,7 @@ export default class Filter extends React.Component {
                   checkco: true,
                 });
               }}
-            ></input>
+            >green</button>
           </div>
         </div>
         <div className="filter-item">
@@ -287,7 +267,7 @@ export default class Filter extends React.Component {
             ></i>
           </h2>
           <div className={this.state.sort ? "filter-options" : "close"}>
-            <input
+            <button
               type="button"
               onClick={(e) => {
                 console.log(e.target.value);
@@ -298,8 +278,8 @@ export default class Filter extends React.Component {
                 });
               }}
               value="price:low to high"
-            ></input>
-            {/* <input type='button' onClick={(e)=>{
+            ></button>
+            {/* <button type='button' onClick={(e)=>{
               console.log(e.target.value)
               this.props.sortl()
               this.setState({
@@ -307,7 +287,7 @@ export default class Filter extends React.Component {
                 ,
               checkso:true
               })
-            }} value="price:low to high"></input> */}
+            }} value="price:low to high"></button> */}
           </div>
         </div>
       </div>
