@@ -1,6 +1,8 @@
 .App {
   text-align: center;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 .App-logo {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Cart from "../src/layouts/pages/cart/cart";
+import Login from '../src/layouts/components/login/login'
 import querypage from "./layouts/pages/querypage/querypage";
 import tribe from "../src/layouts/pages/tribe/tribe";
 import contactus from "../src/layouts/pages/contactus/contactus";
@@ -27,6 +28,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      loggedin:'false',
+      login:false,
       // querypage
       tab: 0,
       items: [
@@ -139,6 +142,14 @@ export default class App extends React.Component {
       ]
     };
   }
+  login=()=>{
+    this.setState({
+      login:!this.state.login
+    })
+  }
+  loggedin=()=>{
+    this.setState({loggedin:true})
+  }
   render() {
     const handleTab = (value) => {
       this.setState({
@@ -147,7 +158,9 @@ export default class App extends React.Component {
     };
     return (
       <div className="App">
-        <Navbar />
+        <Navbar
+        login={this.login} />
+        {this.state.login?<Login toggle={this.login} loggedin={this.loggedin}/>:null}
         <Switch>
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />

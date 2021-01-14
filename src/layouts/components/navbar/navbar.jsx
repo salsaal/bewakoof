@@ -332,7 +332,9 @@ export default class Navbar extends React.Component {
               />
               <i class="fas fa-search"></i>
             </div>
-            <a href="/products/men">Login</a>
+            <a onClick={()=>{
+              this.props.login()
+            }}>Login</a>
             <a href="/products/men">
               <i class="fas fa-heart"></i>
             </a>
