@@ -1,7 +1,14 @@
 import React from "react";
 import "./navbar.css";
 export default class Navbar extends React.Component {
-  render(props) {
+  constructor(props) {
+    super(props);
+    this.state = {
+      option: false,
+      loggedin: localStorage.getItem("loggedin"),
+    };
+  }
+  render() {
     return (
       <nav>
         <div className="nav1">
@@ -81,66 +88,74 @@ export default class Navbar extends React.Component {
                 <div className="specials">
                   <div className="leftspecials">
                     <h4>specials</h4>
-                  
-                      <div className="litem">
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/winter-navigation-icon-1607622564.png"
                         alt=""
                       />
                       <p>win over winter sales</p>
-                      </div>
-                      <div className="litem">
+                    </div>
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/tribe-navigation-icon-1565187343.png"
                         alt=""
                       />
                       <p>tribe membership</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-icon-1607779850.png"
                         alt=""
                       />
                       <p>fabric of the month</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/dotd-navigation-icon-1593437306.png"
                         alt=""
                       />
                       <p>design of the day</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/beeakoof-bazaar-online-shopping-icon-1605014994.png"
                         alt=""
                       />
                       <p>bazaar by bewakoof</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navigation-icon-prevention-gear-1591190310.png"
                         alt=""
                       />
                       <p>prevention gear</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navigation-icon-1586869458.png"
                         alt=""
                       />
                       <p>bewakoof of recommendes</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/clearance-sale-upto-60--off-bewakoof-1585835238.png"
                         alt=""
                       />
                       <p>saving zone</p>
-                      </div>
-                      <div className="litem">
+                    </div>
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif"
                         alt=""
                       />
                       <p>collaborations</p>
-                      </div>
+                    </div>
                   </div>
-                <img src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-box-desktop-1607779849.jpg" alt=""/>
+                  <img
+                    src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-box-desktop-1607779849.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
             </li>
@@ -198,66 +213,74 @@ export default class Navbar extends React.Component {
                 <div className="specials">
                   <div className="leftspecials">
                     <h4>specials</h4>
-                  
-                      <div className="litem">
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/winter-navigation-icon-1607622564.png"
                         alt=""
                       />
                       <p>win over winter sales</p>
-                      </div>
-                      <div className="litem">
+                    </div>
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/tribe-navigation-icon-1565187343.png"
                         alt=""
                       />
                       <p>tribe membership</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-icon-1607779850.png"
                         alt=""
                       />
                       <p>fabric of the month</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/dotd-navigation-icon-1593437306.png"
                         alt=""
                       />
                       <p>design of the day</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/beeakoof-bazaar-online-shopping-icon-1605014994.png"
                         alt=""
                       />
                       <p>bazaar by bewakoof</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navigation-icon-prevention-gear-1591190310.png"
                         alt=""
                       />
                       <p>prevention gear</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navigation-icon-1586869458.png"
                         alt=""
                       />
                       <p>bewakoof of recommendes</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/clearance-sale-upto-60--off-bewakoof-1585835238.png"
                         alt=""
                       />
                       <p>saving zone</p>
-                      </div>
-                      <div className="litem">
+                    </div>
+                    <div className="litem">
                       <img
                         src="https://images.bewakoof.com/nav_menu/navi-collab-icon-1579514101.gif"
                         alt=""
                       />
                       <p>collaborations</p>
-                      </div>
+                    </div>
                   </div>
-                <img src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-box-desktop-1607779849.jpg" alt=""/>
+                  <img
+                    src="https://images.bewakoof.com/nav_menu/bewakoof-fabric-of-the-month-navigation-box-desktop-1607779849.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
             </li>
@@ -294,34 +317,36 @@ export default class Navbar extends React.Component {
                     <a href="/products/men">Realme 7</a>
                     <a href="/products/men">Realme 7 pro</a>
                     <a href="/products/men">Realme 6i</a>
-
                   </div>
                   <div className="item">
                     <h2>Vivo</h2>
-                  <a href="/products/men">vivo v19</a>
-                  <a href="/products/men">vivo y15</a>
-                  <a href="/products/men">vivo s1 pro</a>
+                    <a href="/products/men">vivo v19</a>
+                    <a href="/products/men">vivo y15</a>
+                    <a href="/products/men">vivo s1 pro</a>
                   </div>
                 </div>
                 <div className="specials">
                   <div className="leftspecials">
                     <h4>other brands</h4>
-                  
-                      <div className="litem">
-                       <p>nokia</p>
-                      </div>   <div className="litem">
-                     
+                    <div className="litem">
+                      <p>nokia</p>
+                    </div>{" "}
+                    <div className="litem">
                       <p>oppo</p>
-                      </div>   <div className="litem">
-                     
+                    </div>{" "}
+                    <div className="litem">
                       <p>huwaei</p>
-                      </div>   <div className="litem">
+                    </div>{" "}
+                    <div className="litem">
                       <p>motorolla</p>
-                      </div>
+                    </div>
                   </div>
-                <img src="https://images.bewakoof.com/nav_menu/mobile-cover-dropdown-box-1558161466.jpg" alt=""/>
+                  <img
+                    src="https://images.bewakoof.com/nav_menu/mobile-cover-dropdown-box-1558161466.jpg"
+                    alt=""
+                  />
                 </div>
-                </div>
+              </div>
             </li>
           </div>
           <div className="login">
@@ -332,9 +357,38 @@ export default class Navbar extends React.Component {
               />
               <i class="fas fa-search"></i>
             </div>
-            <a onClick={()=>{
-              this.props.login()
-            }}>Login</a>
+            {localStorage.getItem("loggedin") === "true" ? (
+              <>
+                <div className="loggedin">
+                  <i
+                    onClick={() => {
+                      this.setState({ option: !this.state.option });
+                    }}
+                    className={"fas fa-user user"}
+                  ></i>
+                  <div className={this.state.option ? "moreitems" : "logclose"}>
+                    <button
+                      type="button"
+                      className="logout"
+                      onClick={() => {
+                        this.setState({ option: !this.state.option });
+                        localStorage.removeItem("loggedin");
+                      }}
+                    >
+                      log out
+                    </button>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <a
+                onClick={() => {
+                  this.props.login();
+                }}
+              >
+                Login
+              </a>
+            )}
             <a href="/products/men">
               <i class="fas fa-heart"></i>
             </a>

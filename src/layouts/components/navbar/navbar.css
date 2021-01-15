@@ -116,10 +116,41 @@ nav .nav2 .login .inputwrapper i {
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.5);
 }
+
 nav .nav2 .login i {
   left: 10px;
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav2 .login .loggedin{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+nav .nav2 .login .loggedin i.user{
+  margin-top: 7px;
+  padding: 0 12px;
+}
+nav .nav2 .login .loggedin .moreitems{
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  position: absolute;
+top: 50px;
+left: -50px;
+border: .5px solid rgba(0, 0, 0, 0.5);
+}
+nav .nav2 .login .loggedin .moreitems .logout {
+  background-color: #fff;
+  border: none;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  padding: 10px ;
+}
+nav .nav2 .login .loggedin .logclose {
+display: none;
+
 }
 nav .nav2 .dropdownwrapper li .dropdown{
     padding: 20px;

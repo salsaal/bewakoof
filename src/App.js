@@ -9,6 +9,7 @@ import Navbar from "../src/layouts/components/navbar/navbar";
 import Homepage from "./layouts/pages/homepage/homepage";
 import Footer from "./layouts/components/footer/footer";
 import Construction from "./layouts/pages/construction/construction";
+import Alert from '../src/layouts/components/alert/alert'
 import { Switch, Route } from "react-router-dom";
 import men1 from "../src/assests/men1.jpg";
 import men2 from "../src/assests/men2.webp";
@@ -28,8 +29,10 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loggedin:'false',
+      loggedin:false,
       login:false,
+      alert:false
+,
       // querypage
       tab: 0,
       items: [
@@ -147,8 +150,8 @@ export default class App extends React.Component {
       login:!this.state.login
     })
   }
-  loggedin=()=>{
-    this.setState({loggedin:true})
+  alert=()=>{
+    this.setState({alert:true})
   }
   render() {
     const handleTab = (value) => {
@@ -156,11 +159,15 @@ export default class App extends React.Component {
         tab: value,
       });
     };
+    // localStorage.removeItem('loggedin')
     return (
       <div className="App">
         <Navbar
         login={this.login} />
-        {this.state.login?<Login toggle={this.login} loggedin={this.loggedin}/>:null}
+        {
+        this.state.alert?<Alert />:null
+        }
+        {this.state.login?<Login toggle={this.login}toggleAlert={this.alert}/>:null}
         <Switch>
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
