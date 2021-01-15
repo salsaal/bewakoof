@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import Offer from '../src/layouts/pages/offer/offer'
+import Fanbook from '../src/layouts/pages/fanbook/fanbook'
 import Cart from "../src/layouts/pages/cart/cart";
 import Login from '../src/layouts/components/login/login'
 import querypage from "./layouts/pages/querypage/querypage";
@@ -169,6 +171,8 @@ export default class App extends React.Component {
         }
         {this.state.login?<Login toggle={this.login}toggleAlert={this.alert}/>:null}
         <Switch>
+          <Route  path="/offer" component={Offer}/>
+          <Route  path="/fanbook" component={Fanbook}/>
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
           <Route

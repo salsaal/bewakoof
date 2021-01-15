@@ -13,8 +13,8 @@ export default class Navbar extends React.Component {
       <nav>
         <div className="nav1">
           <div className="offers">
-            <a href="/products/men">offers</a>
-            <a href="">Fanbook</a>
+            <a href="/offer">offers</a>
+            <a href="/fanbook">Fanbook</a>
             <a href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof">
               <i class="fas fa-mobile"></i>
               Download App

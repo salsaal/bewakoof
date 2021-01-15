@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fanbook{
+    margin-top: 110px;
+}
+.fanbook img{
+    width: 100%;
+}
+.fanbook .fanbookimageconta{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fanbook .fanbookimageconta img{
+    width: 33%;
+}
