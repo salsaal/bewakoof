@@ -26,6 +26,7 @@ import men10 from "../src/assests/men10.jpg";
 import Contactus from "../src/layouts/pages/contactus/contactus";
 import Query from "./layouts/pages/querypage/querypage";
 import products from "./productsHub/products";
+import Myaccount from '../src/layouts/pages/myaccount/myaccount'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -171,7 +172,8 @@ export default class App extends React.Component {
         }
         {this.state.login?<Login toggle={this.login}toggleAlert={this.alert}/>:null}
         <Switch>
-          <Route  path="/offer" component={Offer}/>
+          <Route path="/offer" component={Offer} />
+          <Route  path="/account/:id" component={Myaccount}/>
           <Route  path="/fanbook" component={Fanbook}/>
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />

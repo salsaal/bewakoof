@@ -366,12 +366,16 @@ export default class Navbar extends React.Component {
                     }}
                     className={"fas fa-user user"}
                   ></i>
-                  <div className={this.state.option ? "moreitems" : "logclose"}>
+                  <div className="moreitems" >
+                    <p className='logout'>Hi,Salsaal</p>
+                    <a href="/account/My Account" className="logout">
+                      My Account
+                    </a>
                     <button
                       type="button"
                       className="logout"
                       onClick={() => {
-                        this.setState({ option: !this.state.option });
+                      this.setState({ option: !this.state.option });
                         localStorage.removeItem("loggedin");
                       }}
                     >
@@ -381,7 +385,7 @@ export default class Navbar extends React.Component {
                 </div>
               </>
             ) : (
-              <a
+              <a className='llooggin'
                 onClick={() => {
                   this.props.login();
                 }}

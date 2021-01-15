@@ -40,7 +40,7 @@ nav .nav2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0px 150px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 nav .nav2 .dropdownwrapper {
@@ -121,6 +121,8 @@ nav .nav2 .login i {
   left: 10px;
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0px;
+
 }
 
 nav .nav2 .login .loggedin{
@@ -130,16 +132,33 @@ nav .nav2 .login .loggedin{
 }
 nav .nav2 .login .loggedin i.user{
   margin-top: 7px;
-  padding: 0 12px;
+  padding: 5px 12px;
+  padding-bottom: 10px;
+
 }
 nav .nav2 .login .loggedin .moreitems{
   display: flex;
-  width: 150px;
+  width: 200px;
   flex-direction: column;
   position: absolute;
-top: 50px;
+top: 49px;
 left: -50px;
 border: .5px solid rgba(0, 0, 0, 0.5);
+transform: scale(0);
+transition: .02s;
+
+}
+nav .nav2 .login .loggedin .moreitems:hover{
+  transform: scale(1);
+}
+nav .nav2 .login .loggedin i.user:hover + .moreitems{
+  transform: scale(1);
+}
+nav .nav2 .login .loggedin .moreitems p.logout{
+  text-align: left ;
+  font-style: italic;
+  background-color: #eee;
+  padding: 10px ;
 }
 nav .nav2 .login .loggedin .moreitems .logout {
   background-color: #fff;
@@ -147,6 +166,14 @@ nav .nav2 .login .loggedin .moreitems .logout {
   font-size: 1.1em;
   text-transform: capitalize;
   padding: 10px ;
+  text-align: left;
+  transition: .2s;
+}
+nav .nav2 .login .loggedin .moreitems .logout:hover{
+  background-color: #eee;
+}
+nav .nav2 .login .loggedin .moreitems a {
+  margin: 0;
 }
 nav .nav2 .login .loggedin .logclose {
 display: none;

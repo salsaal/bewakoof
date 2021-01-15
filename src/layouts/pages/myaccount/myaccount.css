@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.myaccount{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+    font-family: montserrat,sans-serif;
+
+}
+.aheading{
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+}
+.aheading:after{
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    width: 12%;
+    background-color: #fbd139;
+    height: 2px;
+
+}
+.myaccount .subpageslist{
+    display: flex;
+    width: 100%;
+    padding: 30px 0 70px;
+    border-bottom: .5px solid rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
+}
+.myaccount .subpageslist .pages{
+    width: 25%;
+    padding:0 20px 0 25px;
+    border-right:.5px solid rgba(0, 0, 0, .2) ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+}
+.myaccount .subpageslist .pages span{
+    margin-left: 5px;
+    color: #20a437;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 14px;
+}
+.myaccount .subpageslist .pages span.gosign{
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .5);
+}
+.myaccount .subpageslist .pages p{
+    text-align: left;
+    color: rgba(0, 0, 0, .3);
+    margin-top: 5px;
+    font-size: 13px;
+}
+.myaccount .loweraccount{
+    margin: 150px 0 80px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.myaccount .loweraccount h1{
+    opacity: .6;
+    text-align: left;
+    font-family: montserrat,sans-serif;
+    font-size: 20px;
+    color: #181818;
+    margin: 0 0 30px;
+    padding: 40px 0 0;
+    width: 355px;   
+}
+.myaccount .loweraccount a{
+    float: left;
+    font-family: montserrat,sans-serif;
+    font-size: 14px;
+    color: #51cccc;
+    border-radius: 2px;
+    border: 1px solid #51cccc;
+    padding: 7px 14px;
+    text-decoration: none;
+}
