@@ -12,15 +12,15 @@ export default class Myaccount extends Component {
                     }
                 </h1>
                 <div className="subpageslist">
-                    <a href="" className="pages">
+                    <a href="/orders/My Orders" className="pages">
                         My orders <span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>
-                    <a href="" className="pages">
+                    <a href="/wallet/My Wallet" className="pages">
                         My Wallet <span>Rs.0</span><span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>
-                    <a href="" className="pages">
+                    <a href="/address/My Address" className="pages">
                         My Address <span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>
@@ -36,7 +36,7 @@ export default class Myaccount extends Component {
                 <div className="loweraccount">
                     <div className="left">
                         <h1>Buy something to get personalised recommendations.</h1>
-                        <a href="/">Continue Shopping</a>
+                        <a href="/" className="continue-shopping">Continue Shopping</a>
                     </div>
                     <img src={account} alt=""/>
                 </div>

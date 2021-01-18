@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import MyWallet from '../src/layouts/pages/mywallet/mywallet'
+import Myorders from '../src/layouts/pages/myorders/myorder'
 import Offer from '../src/layouts/pages/offer/offer'
 import Fanbook from '../src/layouts/pages/fanbook/fanbook'
 import Cart from "../src/layouts/pages/cart/cart";
@@ -13,18 +15,9 @@ import Footer from "./layouts/components/footer/footer";
 import Construction from "./layouts/pages/construction/construction";
 import Alert from '../src/layouts/components/alert/alert'
 import { Switch, Route } from "react-router-dom";
-import men1 from "../src/assests/men1.jpg";
-import men2 from "../src/assests/men2.webp";
-import men3 from "../src/assests/men3.jpg";
-import men4 from "../src/assests/men4.jpg";
-import men5 from "../src/assests/men5.jpg";
-import men6 from "../src/assests/men6.jpg";
-import men7 from "../src/assests/men7.jpg";
-import men8 from "../src/assests/men8.jpg";
-import men9 from "../src/assests/men9.jpg";
-import men10 from "../src/assests/men10.jpg";
 import Contactus from "../src/layouts/pages/contactus/contactus";
 import Query from "./layouts/pages/querypage/querypage";
+import Myaddress from './layouts/pages/myaddress/myaddress'
 import products from "./productsHub/products";
 import Myaccount from '../src/layouts/pages/myaccount/myaccount'
 
@@ -174,7 +167,10 @@ export default class App extends React.Component {
         <Switch>
           <Route path="/offer" component={Offer} />
           <Route  path="/account/:id" component={Myaccount}/>
-          <Route  path="/fanbook" component={Fanbook}/>
+          <Route  path="/orders/:id" component={Myorders}/>
+          <Route  path="/wallet/:id" component={MyWallet}/>
+          <Route path="/address/:id" component={Myaddress}/>
+          <Route  path="/fanbook" component={Fanbook}/> 
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
           <Route

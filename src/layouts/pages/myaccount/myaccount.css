@@ -10,6 +10,7 @@
 
 }
 .aheading{
+    font-family: montserrat,sans-serif;
     text-transform: capitalize;
     text-align: left;
     font-weight: 700;
@@ -26,7 +27,7 @@
     bottom: 0;
     left: 0;
     margin-left: 10px;
-    width: 12%;
+    width: 100px;
     background-color: #fbd139;
     height: 2px;
 
@@ -74,6 +75,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .myaccount .loweraccount h1{
     opacity: .6;
     text-align: left;
@@ -84,8 +86,9 @@
     padding: 40px 0 0;
     width: 355px;   
 }
-.myaccount .loweraccount a{
+a.continue-shopping{
     float: left;
+    /* float: left; */
     font-family: montserrat,sans-serif;
     font-size: 14px;
     color: #51cccc;

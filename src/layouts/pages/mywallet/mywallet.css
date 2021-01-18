@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mywallet{
+    margin: 110px auto;
+    width: 85%;
+}
+.mywallet .walletmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.mywallet .walletmain p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+.mywallet .walletmain h3{
+    color: black;
+    font-size: 25px;
+    font-family: Montserrat-Bold;
+}
+.mywallet .walletmain img{
+    width: 30%;
+}
+.mywallet .walletmain p.afterwallet{
+    color: #000;
+    font-size: 20px;
+    margin: 20px 0;
+
+}
+.mywallet .walletmain .afterwallet span{
+    font-weight: bold;
+    display: block;
+
+}
+.mywallet .walletmain button{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #42a2a2;
+    color: #fff;
+    text-align: center;
+    font-family: montserrat,sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    border: 1px solid #42a2a2;
+    cursor: pointer;
+}

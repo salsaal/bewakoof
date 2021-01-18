@@ -1,0 +1,16 @@
+.back-to-account {
+  text-decoration: none;
+  color: black;
+  letter-spacing: .3px;
+  color: #51cccc;
+  font-family: montserrat-regular,sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  display: flex;
+
+}
+.sign {
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-right: 10px;
+}

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.myaddress {
+  width: 80%;
+  margin: 110px auto;
+}
+.myaddress .aheading {
+  margin-bottom: 0;
+}
+.myaddress .add-address {
+    margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-family: "Times New Roman", Times, serif;
+  width: 315px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #181818;
+  cursor: pointer;
+  color: rgb(18, 204, 204);
+  transition: 0.2s;
+}
+.myaddress .add-address:hover {
+  border: 1px solid #51cccc;
+}
+.myaddress .add-address i {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.myaddress .form {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myaddress .form .adjustment {
+    display: flex;flex-direction: column;
+    width: 100%;
+}
+.myaddress .form .form-heading {
+  font-family: montserrat, sans-serif;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  display: block !important;
+  margin-top: 50px;
+}
+.myaddress .form .form-heading::after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  background-color: #fbd139;
+  height: 4px;
+}
+.myaddress .form .form-input {
+  height: 25px;
+  width: 100%;
+  border: none;
+  margin-top: 25px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 1);
+}
+.myaddress .form .form-input:focus{
+    outline: none;
+
+}
+.myaddress .form .form-input:nth-child(3),
+.myaddress .form .form-input:nth-child(9){
+    margin-right: 52px;
+
+}
+/* .myaddress .form .form-input ::before {
+  position: absolute;
+  content: "salsal";
+  display: block;
+  left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+.myaddress .form .form-input.half-form{
+    width: 45%;
+}
+.myaddress .form .other-options{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.myaddress .form .other-options .radio-options{
+    display: flex;
+}
+.myaddress .form .other-options p{
+    color: rgba(0, 0, 0, .5);
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.myaddress .form .other-options .radio input[type="radio"]{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: none;
+    appearance: none;
+}
+.myaddress .form .other-options .radio{
+    position: relative;
+    /* background-color: red; */
+    width: 60px;
+    height: 30px;
+}
+.myaddress .form .other-options .radio label{
+     position: absolute;
+    bottom: 25%;
+    left: 50%; 
+    transform: translatex(-50%);
+    text-transform: capitalize;
+
+}
+.myaddress .form .other-options .radio input:focus{
+    background-color: #fbd245;
+    outline: none;
+}
+.myaddress .form .other-options .save-cancel-address{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.myaddress .form .other-options .save-cancel-address button:focus{
+    outline: none;
+}
+.myaddress .form .other-options .save-cancel-address .canceladdress{
+    background-color: #fff;
+    border: 1px solid #3d9999;
+    color: #3d9999;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.myaddress .form .other-options .save-cancel-address .saveaddress{
+    background-color: #51cccc;
+    border: 1px solid #51cccc;
+    color: #fff;
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 5px;
+}
