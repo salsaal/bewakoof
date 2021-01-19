@@ -1,0 +1,54 @@
+import React, { Component } from "react";
+import refer from "../../../assests/refer-earn.png";
+import "./refer.css";
+class Refer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="refer">
+        <div className="refer-banner">
+          <div className="banner-text">
+            <h1>Refer a friend and earn ₹75</h1>
+            <p>
+              When they place an order using the referral code,
+              <br /> <span> they get credits worth ₹100</span>
+            </p>
+            <p className="banner-last-text">1 Bewakoof Credit = 1 Rupee</p>
+          </div>
+          <img src={refer} alt="" />
+        </div>
+        <div className="refer-code">
+          <div className="code1">
+            <p>Copy the code below</p>
+            <span className="code">SAL6K5WG</span>
+          </div>
+          <div className="code-separator"></div>
+          <div className="share-code">
+            <p>Share via</p>
+            <div className="code-options">
+              <a href="">
+              <i class="fab fa-facebook"></i>
+                facebook
+              </a>
+              <a href="">
+                <i className="fab fa-twitter"></i>
+                twitter
+              </a>
+              <a href="">
+                <i className="fas fa-copy"></i>
+                copy link
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Refer;

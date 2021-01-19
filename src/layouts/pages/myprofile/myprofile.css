@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.myprofile{
+    width: 75%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.myprofile .form{
+    width: 45%;
+}
+.myprofile .form::after{
+    clear: both;
+}
+.myprofile .form .form-input{
+    float: left;
+    border: none;
+    height: 27px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+    background-color: #fff;
+    font-size: 17px;
+    letter-spacing: .5px;
+    color: rgba(0, 0, 0, .5);
+}
+.myprofile .form .form-input:focus{
+    outline: none;
+}
+.myprofile .form .form-input:first-child{
+    margin-right: 40px;
+}
+.myprofile .form .form-input#d-o-b{
+    margin-bottom: 0;
+}
+.myprofile .form .form-input.half-form{
+    width: 46%;
+}
+.myprofile .form .changepassword{
+    border: none;
+    background-color: #fff;
+    color: #51cccc;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 28px;
+    cursor: pointer;
+    width: 40%;
+}
+.myprofile .form .verifynumber{
+    border: 1px solid #51cccc;
+    background-color: #fff;
+    color: #51cccc;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: .35rem 1rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: -190px;
+    /* float: left; */
+}
+.myprofile .form p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    text-align: left;
+
+}
+.myprofile .bottom-profile{
+    margin-top: 35px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.myprofile .bottom-profile .gender{
+    display: flex;
+    align-items: center;
+}
+.myprofile .bottom-profile .gender p{
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, .5);
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.myprofile .bottom-profile .gender .radio{
+    position: relative;
+    /* background-color: red; */
+    width: 80px;
+    height: 40px;
+    /* border: .1px solid #000; */
+}
+.myprofile .bottom-profile .gender .radio label{
+     position: absolute;
+    bottom: 25%;
+    left: 50%; 
+    font-size: 1.2em;
+    font-weight: 600;
+    transform: translatex(-50%);
+    text-transform: capitalize;
+
+}
+.myprofile .bottom-profile .gender .radio input[type="radio"]{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: none;
+    appearance: none;
+}
+.myprofile .bottom-profile .gender .radio input:focus{
+    background-color: #fbd245;
+    outline: none;
+}
+.myprofile .bottom-profile .whatsapp{
+    display: flex;
+    margin: 25px 0;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.myprofile .bottom-profile .whatsapp .whatsapp-switch{
+    width: 30px;
+    height: 15px;
+    border-radius:30px;
+    margin-top: 6px;
+    background-color: #eeeeee;
+    position: relative;
+    transition: .2s;
+}
+.myprofile .bottom-profile .whatsapp .whatsapp-switch:after{
+    position: absolute;
+    content: '';
+    background-color: rgb(241, 231, 231);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .2s;
+    box-shadow: 0 .5px 1px #000;
+}
+.myprofile .bottom-profile .whatsapp .whatsapp-active{
+    background-color: #51cccc;
+}
+.myprofile .bottom-profile .whatsapp .whatsapp-active::after{
+    transition: .2s;
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left:50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.myprofile .bottom-profile .save-changes{
+font-size: 1.1em;
+padding: 20px 40px;
+border: 1px solid #51cccc;
+background-color: #51cccc;
+letter-spacing: 1px;
+color: #fff;
+}

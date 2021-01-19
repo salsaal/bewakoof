@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.refer{
+    margin: 150px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.refer .refer-banner{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F3F7FF;
+}
+.refer .refer-banner .banner-text{
+    width: 40%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+.refer .refer-banner .banner-text h1{
+    color: rgba(0, 0, 0, .9);
+}
+.refer .refer-banner .banner-text p{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 17px;
+    letter-spacing: .4px;
+    color: rgba(0, 0, 0, .7);
+    line-height: 25px;
+}
+.refer .refer-banner .banner-text p span{
+    font-weight: bold;
+}
+.refer .refer-banner .banner-text p.banner-last-text{
+    font-size: 15px;
+}
+.refer .refer-banner img{
+    width: 400px;
+    position: absolute;
+    right: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.refer .refer-code{
+    margin: 100px 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.refer .refer-code .code1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+.refer .refer-code .code1 p{
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.1em;
+}
+.refer .refer-code .code1 span.code{
+    padding: 1rem 2rem;
+    border: 1px dashed #51cccc;
+    margin: 20px 0;
+}
+.refer .refer-code .code-separator{
+    height: 100px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+}
+.refer .refer-code .code-separator::after{
+    position: absolute;
+    content: 'OR';
+    color: rgba(0, 0, 0, .5);
+    top: 50%;
+    height: 25px;
+    widows: 50px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    left: -12px;
+    z-index: 2;
+}
+.refer .refer-code .share-code{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+.refer .refer-code .share-code p{
+    font-size: 17px;
+    margin-bottom: 15px;
+
+}
+.refer .refer-code .share-code .code-options{
+    display: flex;
+}

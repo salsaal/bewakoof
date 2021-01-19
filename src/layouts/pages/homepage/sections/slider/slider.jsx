@@ -2,10 +2,15 @@ import React from "react";
 
 import "./slder.css";
 export default class Slider extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={}
+  }
   render() {
     return (
       <div className="slider">
         <div className="images">
+        
           <img
             src="https://images.bewakoof.com/uploads/grid/app/bewakoof-oof-sale-desktop-strip-1603097557.jpg"
             alt=""

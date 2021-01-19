@@ -24,11 +24,11 @@ export default class Myaccount extends Component {
                         My Address <span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>
-                    <a href="" className="pages">
+                    <a href="/profile/My Profile" className="pages">
                         My Profile <span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>
-                    <a href="" className="pages">
+                    <a href="/refer" className="pages">
                         Refer And earn <span className="gosign">></span>
                         <p>View, modify and track orders</p>
                     </a>

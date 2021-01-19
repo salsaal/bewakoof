@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import Refer from '../src/layouts/pages/refer-earn/refer'
+import Myprofile from '../src/layouts/pages/myprofile/myprofile'
 import MyWallet from '../src/layouts/pages/mywallet/mywallet'
 import Myorders from '../src/layouts/pages/myorders/myorder'
 import Offer from '../src/layouts/pages/offer/offer'
@@ -170,7 +172,9 @@ export default class App extends React.Component {
           <Route  path="/orders/:id" component={Myorders}/>
           <Route  path="/wallet/:id" component={MyWallet}/>
           <Route path="/address/:id" component={Myaddress}/>
+          <Route path="/profile/:id" component={Myprofile}/>
           <Route  path="/fanbook" component={Fanbook}/> 
+          <Route  path="/refer" component={Refer}/> 
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/" component={Homepage} />
           <Route
