@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.refer-separator{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #f3f7ff;
+    top: 600px;
+}
 .refer{
     margin: 150px auto;
     width: 85%;
@@ -103,4 +110,52 @@
 }
 .refer .refer-code .share-code .code-options{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.refer .refer-code .share-code .code-options a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* color: rgba(0, 0, 0, .3); */
+}
+.refer .refer-code .share-code .code-options a i{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* z-index: 2; */
+}
+.refer .refer-code .share-code .code-options a i::after{
+    position: absolute;
+    content: '';
+    bottom: ;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#eee ;
+    z-index: -1;
+}
+.refer .refer-code .share-code .code-options a i.fa-facebook{
+    color: 	#4267B2;
+}
+.refer .referal-work{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+
+}
+.refer .referal-work p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: 20px;
+}
+.refer .referal-work ol{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
