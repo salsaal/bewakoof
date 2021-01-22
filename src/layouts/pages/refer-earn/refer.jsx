@@ -51,11 +51,12 @@ class Refer extends React.Component {
           <div className="referal-work">
             <p>How does referral work?</p>
             <div className="work">
-              <p>Invite your friend to Bewakoof</p>
-              <p>They place their first order with referral code</p>
-              <p>Their order gets delivered</p>
-              <p>You get Bewakoof credits worth ₹75</p>
+              <p><span>1</span> Invite your friend to Bewakoof</p>
+              <p><span>2</span>They place their first order with referral code</p>
+              <p><span>3</span>Their order gets delivered</p>
+              <p><span>4</span>You get Bewakoof credits worth ₹75</p>
             </div>
+            <a href="/contact">need more help?</a>
           </div>
         </div>
       </>

@@ -393,10 +393,10 @@ export default class Navbar extends React.Component {
                 Login
               </a>
             )}
-            <a href="/products/men">
+            <a href="/wishlist">
               <i class="fas fa-heart"></i>
             </a>
-            <a href="/products/men">
+            <a href="/cart">
               <i class="fas fa-shopping-bag"></i>
             </a>
           </div>
