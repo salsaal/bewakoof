@@ -3,10 +3,12 @@ import "./App.css";
 import Refer from '../src/layouts/pages/refer-earn/refer'
 import Myprofile from '../src/layouts/pages/myprofile/myprofile'
 import MyWallet from '../src/layouts/pages/mywallet/mywallet'
+import Tmc from '../src/layouts/pages/tmc/tmc'
 import Myorders from '../src/layouts/pages/myorders/myorder'
 import Offer from '../src/layouts/pages/offer/offer'
 import Fanbook from '../src/layouts/pages/fanbook/fanbook'
 import Cart from "../src/layouts/pages/cart/cart";
+import Wishlist from "../src/layouts/pages/wishlist/wishlist";
 import Login from '../src/layouts/components/login/login'
 import querypage from "./layouts/pages/querypage/querypage";
 import tribe from "../src/layouts/pages/tribe/tribe";
@@ -168,7 +170,8 @@ export default class App extends React.Component {
         {this.state.login?<Login toggle={this.login}toggleAlert={this.alert}/>:null}
         <Switch>
           <Route path="/offer" component={Offer} />
-          <Route  path="/account/:id" component={Myaccount}/>
+          <Route path="/account/:id" component={Myaccount} />
+          <Route  path="/tmc" component={Tmc}/>
           <Route  path="/orders/:id" component={Myorders}/>
           <Route  path="/wallet/:id" component={MyWallet}/>
           <Route path="/address/:id" component={Myaddress}/>
@@ -176,11 +179,11 @@ export default class App extends React.Component {
           <Route  path="/fanbook" component={Fanbook}/> 
           <Route  path="/refer" component={Refer}/> 
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/wishlist/:id" component={Wishlist} />
           <Route exact path="/" component={Homepage} />
           <Route
             path="/products/:id"
             component={Construction}
-
           />
           <Route
             path="/querypage"

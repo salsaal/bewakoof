@@ -50,6 +50,8 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin: 7px 0;
+
 }
 .cart .cartbottom .product-cart .inside-cart{
     display: flex;
@@ -61,12 +63,16 @@
     text-transform: capitalize;
     padding-right: 80px;
     padding-bottom: 50px;
+    text-align: left;
 }
 .cart .cartbottom .product-cart .inside-cart a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #51cccc;
     font-size: 15px;
     text-transform: capitalize;
     width: 50%;
     text-align: left;
+}
+.cart .cartbottom :last-child.product-cart p{
+    padding-right: 10px;
 }

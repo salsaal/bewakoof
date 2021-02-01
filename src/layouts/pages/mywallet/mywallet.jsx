@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Backlink from '../../components/back-link/backlink'
 import wallet from "../../../assests/wallet.gif";
 import "./mywallet.css";
 

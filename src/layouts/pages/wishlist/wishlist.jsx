@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import './cart.css'
-import cart from '../../../assests/cart.png'
+import cart from '../../../assests/wishlist.png'
 export default class Cart extends Component {
     render() {
         return (
             <div className="cart">
                 <div className="bag">
                     <img src={cart} alt=""/>
-                    <h2>nothing in bag</h2>
+                    <h2>your wishlist is empty</h2>
                     <a href="/" className="continue-shopping">Continue Shopping</a>
                 </div>
                 <h4>You could try one of these categories:</h4>

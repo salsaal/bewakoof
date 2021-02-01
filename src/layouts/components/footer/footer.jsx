@@ -10,22 +10,22 @@ export default class Footer extends React.Component {
         <div className="services">
           <div className="service">
             <h3>Customer Service</h3>
-            <a>contact us</a>
-            <a>track order</a>
-            <a>cancel Order</a>
-            <a>return order</a>
+            <a href="/contact">contact us</a>
+            <a href="/contact">track order</a>
+            <a href="/contact">cancel Order</a>
+            <a href="/contact"> return order</a>
           </div>
           <div className="service">
             <h3>company</h3>
             <a>about us</a>
             <a>we'r hiring</a>
-            <a>terms and conditions</a>
+            <a href="/tmc">terms and conditions</a>
             <a>privacy & polivcy</a>
             <a>blog</a>
           </div>
           <div className="service">
             <h3>Connect with us</h3>
-            <a>
+            <a href="https://www.facebook.com/search/top?q=bewakoof%20com">
               <i class="fab fa-facebook-square"></i> 4.7M people like this
             </a>
             <a>
@@ -48,11 +48,11 @@ export default class Footer extends React.Component {
         </div>
         <div className="payment">
           <div>
-            <a href="">
+            <a href="/contact">
               <i class="fas fa-undo"></i>
               <p>15 Days return policy</p>
             </a>
-            <a href="">
+            <a href="/contact">
               <i class="fas fa-truck"></i>
               <p>Cash On Delivery</p>
             </a>
@@ -60,14 +60,21 @@ export default class Footer extends React.Component {
           <div>
             <h3>Download the app</h3>
             <div>
+              <a href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof">
+
               <img
                 src="https://images.bewakoof.com/web/app_android_v1.png"
                 alt=""
-              />
+                />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof">
+                
               <img
                 src="https://images.bewakoof.com/web/app_ios_v1.png"
                 alt=""
               />
+              </a>
+
             </div>
           </div>
           <div>

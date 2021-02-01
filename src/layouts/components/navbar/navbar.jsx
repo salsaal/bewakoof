@@ -371,6 +371,15 @@ export default class Navbar extends React.Component {
                     <a href="/account/My Account" className="logout">
                       My Account
                     </a>
+                    <a href="/wishlist/My Wishlist" className="logout">
+                      My wishlist
+                    </a>
+                    <a href="/wallet/My Wallet" className="logout">
+                      My Wallet
+                    </a>
+                    <a href="/orders/My orders" className="logout">
+                      My Orders
+                    </a>
                     <button
                       type="button"
                       className="logout"
@@ -393,7 +402,7 @@ export default class Navbar extends React.Component {
                 Login
               </a>
             )}
-            <a href="/wishlist">
+            <a href="/wishlist/My Wislist">
               <i class="fas fa-heart"></i>
             </a>
             <a href="/cart">

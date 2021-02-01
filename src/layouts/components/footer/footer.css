@@ -34,6 +34,7 @@ footer .services .service h3{
 }
 footer .services .service a{
     color: #fff;
+    text-decoration: none;
 }
 footer .services .service i{
     cursor: pointer;
