@@ -23,16 +23,25 @@ export default class Cart extends Component {
                     </div>
                     <div className="product-cart">
                         <p>women</p>
+                        <div className="inside-cart">
+
                         <a href="/products/women">topwear</a>
                         <a href="/products/women">bottomwear</a>
                         <a href="/products/women">best sellers</a>
                     </div>
+                    </div>
+
                     <div className="product-cart">
                         <p>Mobile Covers</p>
+                        <div className="inside-cart">
+
                         <a href="/products/mobile covers"></a>
+
                     </div>
                 </div>
             </div>
+            </div>
+
         )
     }
 }

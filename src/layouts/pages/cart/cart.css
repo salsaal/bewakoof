@@ -37,8 +37,7 @@
 .cart .cartbottom{
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    width: 80%;
+    width: 75%;
     /* background-color: red; */
 }
 .cart h4{
@@ -56,8 +55,9 @@
     display: flex;
     width: 70%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.cart .cartbottom .product-cart .inside-cart p{
+.cart .cartbottom .product-cart p{
     text-transform: capitalize;
     padding-right: 80px;
     padding-bottom: 50px;
@@ -65,7 +65,8 @@
 .cart .cartbottom .product-cart .inside-cart a{
     text-decoration: none;
     color: #51cccc;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: capitalize;
-    margin:  10px 30px;
+    width: 50%;
+    text-align: left;
 }
