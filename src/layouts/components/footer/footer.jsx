@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
           </div>
           <div className="service">
             <h3>company</h3>
-            <a>about us</a>
+            <a href="/about">about us</a>
             <a>we'r hiring</a>
             <a href="/tmc">terms and conditions</a>
             <a>privacy & polivcy</a>

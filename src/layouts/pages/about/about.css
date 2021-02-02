@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-page{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-page span{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-page p{
+    font-size: 23px;
+    font-family: HelveticaNeue-Light;
+    text-align: left;
+    word-spacing: 2px;
+}
+.about-page .about-intro{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.about-page .about-intro .aheading{
+    font-size: 45px;
+    font-weight: 500;
+}
+.about-page .about-intro .story-description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    text-align: left;
+}
+.about-page .description-heading{
+    font-size: 27px;
+    font-weight: 500;
+    font-family: montserrat,sans-serif;
+    width: 70%;
+}
+.about-page .about-intro .story-description p:nth-child(2){
+    margin: 30px 0;
+}
+.about-page .black-about{
+    margin: 100px 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 180px 0;
+    color: #fff;
+}
+.about-page .black-about .black-content{
+    font-size: 48px;
+    width: 51%;
+    word-spacing: normal;
+}
+.about-page .look-about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-page .look-about .description-heading{
+    width: auto;
+    font-size: 22px;
+}
+.about-page .look-about p{
+    margin: 25px 0;
+}
+.about-page img{
+    width: 100%;
+    margin: 100px 0;
+}
+.about-page .fashion-about{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-page .fashion-about h1{
+    text-align: left;
+    margin: 20px 0;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    word-spacing: 2px;
+    font-family: HelveticaNeue-Light;
+}
+.about-page .fashion-about p:last-child{
+    margin-bottom: 70px;
+}
+.about-page .history-about{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    padding: 100px 250px;
+    justify-content: space-between;
+}
