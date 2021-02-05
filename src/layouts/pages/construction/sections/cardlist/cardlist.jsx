@@ -10,7 +10,7 @@ export  default class Cardlist extends React.Component{
             ):( <div className="cardlist">
                 {
                    this.props.products.map(item =>(
-                        <Card key={item.id} products={item} />
+                       <Card key={item.id} products={item} id={item.id}/>
 
                     ))
                 }

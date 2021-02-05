@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Productd from '../src/layouts/pages/product-detail/productDetail'
 import Refer from '../src/layouts/pages/refer-earn/refer'
 import Privacy from '../src/layouts/pages/pirvacy/privacy'
 import About from '../src/layouts/pages/about/about'
@@ -185,6 +186,8 @@ export default class App extends React.Component {
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/wishlist/:id" component={Wishlist} />
           <Route exact path="/" component={Homepage} />
+          <Route path="/productd/:id" component={Productd} />
+
           <Route
             path="/products/:id"
             component={Construction}

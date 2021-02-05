@@ -6,6 +6,9 @@
   width: 70%;
   margin: 150px auto 0;
 }
+.privacy span{
+    font-weight: bold;
+}
 .privacy .heading {
     text-align: center;
   text-transform: capitalize;
@@ -24,17 +27,43 @@
   color: #333;
     font-size: 20px;
     font-weight: 600;
-    text-decoration: underline;
 }
 .privacy ol .h-ol .s-ol{
-    padding-left: 20px;
-    font-size: 16px;
-    counter-reset: item 
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+    counter-reset: foo;
+    color:#333;
+    font-weight: lighter;
 }
 .privacy ol .h-ol .s-ol .content{
-    display: block
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 20px;
 }
 .privacy ol .h-ol .s-ol .content::before{
-    content: counters(item, ".") " "; 
-    counter-increment: item
+    counter-increment: foo;
+    padding-right: 5px;
+    content: "1." counter(foo) " ";
+}
+.privacy ol .h-ol .ol-2 .content::before{
+    content: "2." counter(foo) " ";
+}
+.privacy ol .h-ol .ol-3 .content::before{
+    content: "3." counter(foo) " ";
+}
+.privacy ol .h-ol .ol-4 .content::before{
+    content: "4." counter(foo) " ";
+}.privacy ol .h-ol .ol-5 .content::before{
+    content: "5." counter(foo) " ";
+}.privacy ol .h-ol .ol-6 .content::before{
+    content: "6." counter(foo) " ";
+}
+.privacy ol .h-ol .s-ol .content .t-ol{
+    padding-left: 30px;
+    list-style: lower-alpha;
+    padding-top: 20px;
+}
+.privacy ol .h-ol .s-ol .content .t-ol .inside-content{
+    padding-bottom: 20px;
 }

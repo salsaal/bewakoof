@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+a.wholecard{
+    text-decoration: none;
+    color: #000;
+}
 .card{
     display: flex;
     flex-direction: column;
