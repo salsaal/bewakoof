@@ -75,9 +75,9 @@ export default class About extends Component {
                     </div>
                 </div>
                 <div className="last-section">
-                    <h1>
+                    <p>
                     What makes us <span> Bewakoof</span>
-                    </h1>
+                    </p>
                     <div className="last-about">
                         <div className="last-design">
                             <h1>Innovative design</h1>

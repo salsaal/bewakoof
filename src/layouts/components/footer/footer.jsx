@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
             <a href="/about">about us</a>
             <a>we'r hiring</a>
             <a href="/tmc">terms and conditions</a>
-            <a>privacy & polivcy</a>
+            <a href="/privacy">privacy & polivcy</a>
             <a>blog</a>
           </div>
           <div className="service">
@@ -28,14 +28,22 @@ export default class Footer extends React.Component {
             <a href="https://www.facebook.com/search/top?q=bewakoof%20com">
               <i class="fab fa-facebook-square"></i> 4.7M people like this
             </a>
-            <a>
+            <a href="https://www.instagram.com/bewakoofofficial/">
               <i class="fab fa-instagram"></i>1M followeres
             </a>
             <div className="iconcontainer">
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-pinterest-square"></i>
-              <i class="fab fa-snapchat-ghost"></i>
-              <i class="fab fa-apple"></i>
+              <a href="https://twitter.com/bewakoof">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://in.pinterest.com/bewakoof/_created/">
+                <i class="fab fa-pinterest-square"></i>
+              </a>
+              <a href="https://www.snapchat.com/add/bewakoof_tv">
+                <i class="fab fa-snapchat-ghost"></i>
+              </a>
+              <a href="https://apps.apple.com/in/app/bewakoof/id1100190514">
+                <i class="fab fa-apple"></i>
+                </a>
             </div>
           </div>
           <div className="service">
@@ -67,7 +75,7 @@ export default class Footer extends React.Component {
                 alt=""
                 />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof">
+              <a href="https://apps.apple.com/in/app/bewakoof/id1100190514">
                 
               <img
                 src="https://images.bewakoof.com/web/app_ios_v1.png"

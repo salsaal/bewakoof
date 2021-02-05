@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-li{
-    list-style-type: none;
-}
 nav {
   width: 100%;
   position: fixed;
@@ -35,7 +32,7 @@ nav .nav1 a i {
   margin-right: 5px;
 }
 nav .nav2 {
-    background-color: #fff;
+  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -47,7 +44,7 @@ nav .nav2 .dropdownwrapper {
   display: flex;
   align-items: center;
 }
-nav .nav2 .dropdownwrapper li {
+nav .nav2 .dropdownwrapper .ccaattoo {
   position: relative;
   letter-spacing: 0.5px;
   font-size: 14px;
@@ -56,7 +53,7 @@ nav .nav2 .dropdownwrapper li {
   padding: 20px 10px;
   text-transform: uppercase;
 }
-nav .nav2 .dropdownwrapper li::after {
+nav .nav2 .dropdownwrapper .ccaattoo::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -66,7 +63,7 @@ nav .nav2 .dropdownwrapper li::after {
   bottom: 0px;
   left: 0;
 }
-nav .nav2 .dropdownwrapper li:hover:after {
+nav .nav2 .dropdownwrapper .ccaattoo:hover:after {
   height: 5px;
 }
 nav .nav2 .dropdownwrapper a img {
@@ -83,12 +80,11 @@ nav .nav2 .login a {
   font-weight: 500;
   text-transform: uppercase;
 }
-nav .nav2 .login a:nth-child(2){
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-  padding-left:20px;
+nav .nav2 .login a:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
   margin-left: 20px;
-  padding-top: 6px
-
+  padding-top: 6px;
 }
 nav .nav2 .login .inputwrapper {
   display: flex;
@@ -123,117 +119,111 @@ nav .nav2 .login i {
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.5);
   padding: 5px 0px;
-
 }
 
-nav .nav2 .login .loggedin{
+nav .nav2 .login .loggedin {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-nav .nav2 .login .loggedin i.user{
+nav .nav2 .login .loggedin i.user {
   margin-top: 7px;
   padding: 5px 12px;
   padding-bottom: 10px;
-
 }
-nav .nav2 .login .loggedin .moreitems{
+nav .nav2 .login .loggedin .moreitems {
   display: flex;
   width: 200px;
   flex-direction: column;
   position: absolute;
-top: 49px;
-left: -50px;
-border: .5px solid rgba(0, 0, 0, 0.5);
-transform: scale(0);
-transition: .02s;
-
+  top: 49px;
+  left: -50px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: 0.02s;
 }
-nav .nav2 .login .loggedin .moreitems:hover{
+nav .nav2 .login .loggedin .moreitems:hover {
   transform: scale(1);
 }
-nav .nav2 .login .loggedin i.user:hover + .moreitems{
+nav .nav2 .login .loggedin i.user:hover + .moreitems {
   transform: scale(1);
 }
-nav .nav2 .login .loggedin .moreitems p.logout{
-  text-align: left ;
+nav .nav2 .login .loggedin .moreitems p.logout {
+  text-align: left;
   font-style: italic;
   background-color: #eee;
-  padding: 10px ;
+  padding: 10px;
 }
 nav .nav2 .login .loggedin .moreitems .logout {
   background-color: #fff;
   border: none;
   font-size: 1.1em;
   text-transform: capitalize;
-  padding: 10px ;
+  padding: 10px;
   text-align: left;
-  transition: .2s;
+  transition: 0.2s;
 }
-nav .nav2 .login .loggedin .moreitems .logout:hover{
+nav .nav2 .login .loggedin .moreitems .logout:hover {
   background-color: #eee;
 }
 nav .nav2 .login .loggedin .moreitems a {
   margin: 0;
 }
 nav .nav2 .login .loggedin .logclose {
-display: none;
-
+  display: none;
 }
-nav .nav2 .dropdownwrapper li .dropdown{
-    padding: 20px;
-    /* opacity: 0; */
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 1200px;
-    margin: 0 auto;
-    position: fixed;
-    top: 91px;
-    left: 100px;
-    transform: scale(0);
-    transition: .001s;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown {
+  padding: 20px;
+  /* opacity: 0; */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  position: fixed;
+  top: 91px;
+  left: 100px;
+  transform: scale(0);
+  transition: 0.001s;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
-nav .nav2 .dropdownwrapper li .dropdown .cat{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .cat {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-nav .nav2 .dropdownwrapper li .dropdown .cat .item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 27%;
-    margin-bottom: 50px;
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .cat .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 27%;
+  margin-bottom: 50px;
 }
-nav .nav2 .dropdownwrapper li .dropdown .cat .item h2{
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 500;
-    margin: 5px 0;
-    text-align: left  ;
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .cat .item h2 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  margin: 5px 0;
+  text-align: left;
 }
-nav .nav2 .dropdownwrapper li .dropdown .cat .item a{
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 400;
-    margin: 4px 0;
-    cursor: pointer;
-    text-align: left;
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .cat .item a {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  margin: 4px 0;
+  cursor: pointer;
+  text-align: left;
 }
-nav .nav2 .dropdownwrapper li .dropdown .cat .item a:hover{
-    text-decoration: underline;
-
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .cat .item a:hover {
+  text-decoration: underline;
 }
-nav .nav2 .dropdownwrapper li:hover .dropdown{
-    transform: scale(1);
-    opacity: 1;
+nav .nav2 .dropdownwrapper .ccaattoo:hover .dropdown {
+  transform: scale(1);
+  opacity: 1;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials{
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .specials {
   padding-left: 20px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   width: 45%;
@@ -241,42 +231,66 @@ nav .nav2 .dropdownwrapper li .dropdown .specials{
   justify-content: space-around;
   /* background-color: red; */
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials h4{
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .specials .leftspecials h4 {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
-/* padding-left: 20px; */
+  /* padding-left: 20px; */
   text-align: left;
   margin-bottom: 10px;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials{
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .specials .leftspecials {
   width: 50%;
   /* background-color: red; */
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials .litem{
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .specials .leftspecials .litem {
   width: 100%;
   /* margin: 5px; */
   display: flex;
-  cursor:pointer;
+  cursor: pointer;
   align-items: center;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials .litem:hover p{
+nav
+  .nav2
+  .dropdownwrapper
+  .ccaattoo
+  .dropdown
+  .specials
+  .leftspecials
+  .litem:hover
+  p {
   text-decoration: underline;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials .litem img{
+nav
+  .nav2
+  .dropdownwrapper
+  .ccaattoo
+  .dropdown
+  .specials
+  .leftspecials
+  .litem
+  img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   margin: 8px;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials .leftspecials .litem p{
+nav
+  .nav2
+  .dropdownwrapper
+  .ccaattoo
+  .dropdown
+  .specials
+  .leftspecials
+  .litem
+  p {
   text-transform: capitalize;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
   margin-bottom: 10px;
 }
-nav .nav2 .dropdownwrapper li .dropdown .specials img{
+nav .nav2 .dropdownwrapper .ccaattoo .dropdown .specials img {
   height: 250px;
   cursor: pointer;
 }

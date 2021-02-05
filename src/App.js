@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Refer from '../src/layouts/pages/refer-earn/refer'
+import Privacy from '../src/layouts/pages/pirvacy/privacy'
 import About from '../src/layouts/pages/about/about'
 import Myprofile from '../src/layouts/pages/myprofile/myprofile'
 import MyWallet from '../src/layouts/pages/mywallet/mywallet'
@@ -171,6 +172,7 @@ export default class App extends React.Component {
         {this.state.login?<Login toggle={this.login}toggleAlert={this.alert}/>:null}
         <Switch>
           <Route path="/offer" component={Offer} />
+          <Route path="/privacy" component={Privacy} />
           <Route path="/about" component={About} />
           <Route path="/account/:id" component={Myaccount} />
           <Route  path="/tmc" component={Tmc}/>

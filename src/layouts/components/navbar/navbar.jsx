@@ -34,7 +34,7 @@ export default class Navbar extends React.Component {
                 alt=""
               />
             </a>
-            <li>
+            <div className="ccaattoo">
               <a href="/products/men">Men</a>
               <div className="dropdown">
                 <div className="cat">
@@ -158,8 +158,8 @@ export default class Navbar extends React.Component {
                   />
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div className="ccaattoo">
               <a href="/products/women">Women</a>
               <div className="dropdown">
                 <div className="cat">
@@ -283,8 +283,8 @@ export default class Navbar extends React.Component {
                   />
                 </div>
               </div>
-            </li>
-            <li>
+            </div>
+            <div className="ccaattoo">
               <a href="/products/mobile covers">Mobile Covers</a>
               <div className="dropdown">
                 <div className="cat">
@@ -347,7 +347,7 @@ export default class Navbar extends React.Component {
                   />
                 </div>
               </div>
-            </li>
+            </div>
           </div>
           <div className="login">
             <div className="inputwrapper">
@@ -366,8 +366,8 @@ export default class Navbar extends React.Component {
                     }}
                     className={"fas fa-user user"}
                   ></i>
-                  <div className="moreitems" >
-                    <p className='logout'>Hi,Salsaal</p>
+                  <div className="moreitems">
+                    <p className="logout">Hi,Salsaal</p>
                     <a href="/account/My Account" className="logout">
                       My Account
                     </a>
@@ -384,7 +384,7 @@ export default class Navbar extends React.Component {
                       type="button"
                       className="logout"
                       onClick={() => {
-                      this.setState({ option: !this.state.option });
+                        this.setState({ option: !this.state.option });
                         localStorage.removeItem("loggedin");
                       }}
                     >
@@ -394,7 +394,8 @@ export default class Navbar extends React.Component {
                 </div>
               </>
             ) : (
-              <a className='llooggin'
+              <a
+                className="llooggin"
                 onClick={() => {
                   this.props.login();
                 }}

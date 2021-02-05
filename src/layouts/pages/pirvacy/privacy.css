@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.privacy {
+  width: 70%;
+  margin: 150px auto 0;
+}
+.privacy .heading {
+    text-align: center;
+  text-transform: capitalize;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.privacy ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.privacy ol .h-ol{
+  color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.privacy ol .h-ol .s-ol{
+    padding-left: 20px;
+    font-size: 16px;
+    counter-reset: item 
+}
+.privacy ol .h-ol .s-ol .content{
+    display: block
+}
+.privacy ol .h-ol .s-ol .content::before{
+    content: counters(item, ".") " "; 
+    counter-increment: item
+}
