@@ -15,7 +15,7 @@ export default class Cardlist extends React.Component {
             <div className="flash"></div>
           </a>
           <a href={`/productd/${this.props.id}`} className="wholecard">
-            <img src={this.props.products.image} alt="" />
+            <img src={this.props.products.images[0]} alt="" />
           </a>
         </div>
         <a href={`/productd/${this.props.id}`} className="wholecard">

@@ -1,3 +1,27 @@
 .product-page{
     margin: 150px auto 0;
+    width: 85%;
+}
+.product-page .product{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.product-page .imagesection{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+.product-page .imagesection .images{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.product-page .imagesection .images img{
+    width: 100px;
+    height: 130px;
+    margin-bottom:10px;
+}
+.product-page .imagesection img{
+    width: 73%;
 }

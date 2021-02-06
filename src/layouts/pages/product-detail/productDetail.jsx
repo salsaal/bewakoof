@@ -5,40 +5,59 @@ export default class ProductDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      myarr: [],
+      product: {},
       loading: true,
+      tab: 0,
     };
   }
   async componentDidMount() {
-    let arr = [];
     await products.forEach((item) => {
-      console.log(item.id);
-      console.log(this.props.match.params.id);
-
       if (this.props.match.params.id == item.id) {
-        arr.push(item);
-        console.log("andar ghusa");
+        this.setState({
+          product: item,
+          loading: false,
+        });
       }
     });
-    console.log(arr);
-    this.setState({
-      myarr: arr,
-      loading: false,
-    });
-    console.log(this.state.myarr);
   }
   render() {
     return (
       <>
         {this.state.loading ? null : (
           <div className="product-page">
-            {/* {this.props.match.params.id} */}
-            {this.state.myarr[0].id}
-            <img src={this.state.myarr[0].image} alt="" />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-            autem asperiores? Assumenda, deserunt ipsa magni pariatur soluta
-            dolores laboriosam, magnam commodi voluptate quaerat cupiditate
-            nesciunt unde hic facilis blanditiis velit.
+            <div className="product">
+            <div className="imagesection">
+              <div className="images">
+                <img
+                  src={this.state.product.images[0]}
+                  alt=""
+                  onClick={() => {
+                    this.setState({ tab: 0 });
+                  }}
+                />
+                <img
+                  src={this.state.product.images[1]}
+                  alt=""
+                  onClick={() => {
+                    this.setState({ tab: 1 });
+                  }}
+                />
+                <img
+                  src={this.state.product.images[2]}
+                  alt=""
+                  onClick={() => {
+                    this.setState({ tab: 2 });
+                  }}
+                />
+              </div>
+              <img src={this.state.product.images[this.state.tab]} alt="" />
+            </div>
+            <div className="detail"> <p className="product-name">
+            Powerful People {this.state.product.name}
+            </p>
+
+            </div>
+            </div>
           </div>
         )}
       </>
