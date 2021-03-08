@@ -20,7 +20,7 @@ export default class Cardlist extends React.Component {
         </div>
         <a href={`/productd/${this.props.id}`} className="wholecard">
           <h5>{this.props.products.name}</h5>
-          <h5>{this.props.products.price}</h5>
+          <h5>₹{this.props.products.price}</h5>
         </a>
 
         <div

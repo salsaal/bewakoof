@@ -30,7 +30,7 @@ const products = [
     for: "men",
     type: "t-shirt",
     name: "Mens  t-shirt black",
-    price: "₹250",
+    price: 250,
     size: "s",
   },
   {
@@ -40,7 +40,7 @@ const products = [
     for: "men",
     type: "t-shirt",
     name: "Mens white",
-    price: "₹230",
+    price: 230,
     size: "m",
   },
   {
@@ -50,7 +50,7 @@ const products = [
     for: "men",
     type: "jackets",
     name: "Mens black",
-    price: "₹240",
+    price: 240,
     size: "l",
   },
   {
@@ -60,7 +60,7 @@ const products = [
     for: "men",
     type: "jackets",
     name: "Mens white",
-    price: "₹340",
+    price: 340,
     size: "xl",
   },
   {
@@ -70,7 +70,7 @@ const products = [
     for: "men",
     type: "hoodies",
     name: "Mens black",
-    price: "₹350",
+    price: 350,
     size: "xxl",
   },
   {
@@ -80,7 +80,7 @@ const products = [
     for: "men",
     type: "hoodies",
     name: "Mens white",
-    price: "₹210",
+    price: 210,
     size: "s",
   },
   {
@@ -90,7 +90,7 @@ const products = [
     for: "men",
     type: "shirt",
     name: "Mens black",
-    price: "₹280",
+    price: 280,
     size: "m",
   },
   {
@@ -100,7 +100,7 @@ const products = [
     for: "men",
     type: "shirt",
     name: "Mens white",
-    price: "₹265",
+    price: 265,
     size: "l",
   },
   {
@@ -110,7 +110,7 @@ const products = [
     for: "men",
     type: "kurta",
     name: "Mens black",
-    price: "₹320",
+    price: 320,
     size: "xl",
   },
   {
@@ -120,7 +120,7 @@ const products = [
     for: "men",
     type: "kurta",
     name: "Mens white",
-    price: "₹190",
+    price: 190,
     size: "xxl",
   },
   {
@@ -130,7 +130,7 @@ const products = [
     for: "women",
     type: "t-shirt",
     name: "womens  t-shirt-black",
-    price: "₹250",
+    price: 250,
     size: "s",
   },
   {
@@ -140,7 +140,7 @@ const products = [
     for: "women",
     type: "t-shirt",
     name: "womens  t-shirt-white",
-    price: "₹250",
+    price: 250,
     size: "m",
   },
   {
@@ -150,7 +150,7 @@ const products = [
     for: "women",
     type: "jackets",
     name: "womens  jackets-green",
-    price: "₹250",
+    price: 250,
     size: "l",
   },
   {
@@ -160,7 +160,7 @@ const products = [
     for: "women",
     type: "jackets",
     name: "womens  jackets-red",
-    price: "₹250",
+    price: 250,
     size: "xl",
   },
   {
@@ -170,7 +170,7 @@ const products = [
     for: "women",
     type: "hoodies",
     name: "womens  hoodies-red",
-    price: "₹250",
+    price: 250,
     size: "xxl",
   },
   {
@@ -180,7 +180,7 @@ const products = [
     for: "women",
     type: "hoodies",
     name: "womens hoodies-black",
-    price: "₹250",
+    price: 250,
     size: "xxl",
   },
   {
@@ -190,7 +190,7 @@ const products = [
     for: "women",
     type: "shirt",
     name: "womens  shirt-red",
-    price: "₹250",
+    price: 250,
     size: "xl",
   },
   {
@@ -200,7 +200,7 @@ const products = [
     for: "women",
     type: "shirt",
     name: "womens  shirt-green",
-    price: "₹250",
+    price: 250,
     size: "l",
   },
   {
@@ -210,7 +210,7 @@ const products = [
     for: "women",
     type: "kurta",
     name: "womens kurta-white",
-    price: "₹250",
+    price: 250,
     size: "m",
   },
   {
@@ -220,7 +220,7 @@ const products = [
     for: "women",
     type: "kurta",
     name: "womens  kurta-red",
-    price: "₹250",
+    price: 250,
     size: "s",
   },
 ];

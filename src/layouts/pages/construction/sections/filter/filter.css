@@ -88,7 +88,7 @@
     margin-top: 20px;
     flex-wrap: wrap;
 }
-.filter .filter-item .color-options .color-picker{
+.color-picker{
     width: 30px;
     height: 30px;
     margin: 10px;
@@ -98,19 +98,19 @@
     cursor: pointer;
 
 }
-.filter .filter-item .color-options .color-picker.red{
+.color-picker.red{
     background-color: red;
 }
-.filter .filter-item .color-options .color-picker.blue{
+.color-picker.blue{
     background-color: blue;
 }
-.filter .filter-item .color-options .color-picker.black{
+.color-picker.black{
     background-color: #000;
 }
-.filter .filter-item .color-options .color-picker.gray{
+.color-picker.gray{
     background-color: #fff;
 }
-.filter .filter-item .color-options .color-picker.green{
+ .color-picker.green{
     background-color: green;
 }
 .filter .filter-item .filter-options button{

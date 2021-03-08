@@ -1,11 +1,11 @@
 .product-page{
     margin: 150px auto 0;
-    width: 85%;
+    width: 80%;
 }
 .product-page .product{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .product-page .imagesection{
     display: flex;
@@ -24,4 +24,84 @@
 }
 .product-page .imagesection img{
     width: 73%;
+}
+.product-page .detail{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+.product-page .detail .product-name{
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-family: montserrat,sans-serif;
+    line-height: 20px;
+    color: rgba(0,0,0,.7);
+    font-weight: 500;
+}
+.product-page .detail .price{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    display: block;
+}
+.product-page .detail .less-price,
+.product-page .detail span{
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0,0,0,.4);
+    margin-bottom: 8px;
+}
+.product-page .detail span{
+    text-decoration: none;
+}
+.product-page .detail .taxes{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    background-color: hsla(0,0%,92.9%,.6);;
+    color: #333;
+    align-items: center;
+
+}
+.product-page .detail .taxes span{
+    color: #222;
+    cursor: pointer;
+}
+.product-page .detail .taxes span:hover{
+    text-decoration: underline;
+}
+.product-page .detail .color-section p,
+    .product-page .detail .size-section p{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    letter-spacing: .7px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+.product-page .detail .size-section{width: 50%;}
+.product-page .detail .size-section .sizes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.product-page .detail .size-section .sizes button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #222;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: rgba(0,0,0,.6);
+    border: none;
+}
+.product-page .detail .size-section .sizes button:hover{
+    border: 2px solid #42a2a2;
+    
 }
