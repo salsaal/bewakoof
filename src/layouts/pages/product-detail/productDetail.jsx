@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./productDetail.css";
 import products from "../../../productsHub/products";
+import cod from '../../../assests/cod.png'
 export default class ProductDetail extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +10,7 @@ export default class ProductDetail extends Component {
       loading: true,
       tab: 0,
       name: "Gray",
+      check:false
     };
   }
   async componentDidMount() {
@@ -104,8 +106,30 @@ export default class ProductDetail extends Component {
                     <button>L</button>
                     <button>XL</button>
                     <button>XXl</button>
-
                   </div>
+                </div>
+                <div className="add-to-cart">
+                <div
+          className={this.state.check ? "heart added" : "heart"}
+          onClick={() => {
+            this.setState({ check: !this.state.check });
+          }}
+        >
+          <i className="fas fa-heart"></i>
+        </div>
+        <button>ADD TO CART</button>
+                </div>
+                <div className="pincode">
+                <p>Delivery Details</p>
+            <div className="input">
+                <input type="text"/>
+                <span className="pin">Enter Pincode</span>
+                <span className="check">Check</span>
+             </div>
+                <div className="cod">
+                <img src={cod} alt=""/>
+                <p>Cash on Delivery might be available.</p>
+                </div>
                 </div>
               </div>
             </div>

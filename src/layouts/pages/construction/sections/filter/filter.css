@@ -89,12 +89,12 @@
     flex-wrap: wrap;
 }
 .color-picker{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin: 10px;
     background-color: red;
-    border: .5px solid rgba(0, 0, 0, .5);
-    border-radius: 5px;
+    border: none;
+    /* border-radius: 5px; */
     cursor: pointer;
 
 }
@@ -108,7 +108,7 @@
     background-color: #000;
 }
 .color-picker.gray{
-    background-color: #fff;
+    background-color: #eee;
 }
  .color-picker.green{
     background-color: green;
@@ -124,6 +124,7 @@
     margin: 3px 0;
     background-color: #fff;
     border: none;
+    cursor: pointer;
 }
 .filter .filter-item .filter-options button:focus{
     outline: none;

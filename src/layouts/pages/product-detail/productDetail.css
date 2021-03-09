@@ -23,7 +23,7 @@
     margin-bottom:10px;
 }
 .product-page .imagesection img{
-    width: 73%;
+    width: 65%;
 }
 .product-page .detail{
     width: 45%;
@@ -74,16 +74,18 @@
     text-decoration: underline;
 }
 .product-page .detail .color-section p,
-    .product-page .detail .size-section p{
+    .product-page .detail .size-section p,
+    .product-page .detail .pincode p{
     margin-left: 5px;
     margin-bottom: 5px;
     font-size: 1.1rem;
-    letter-spacing: .7px;
+    letter-spacing: .2px;
+    font-weight: lighter;
     /* display: flex;
     flex-direction: column;
     align-items: flex-start; */
 }
-.product-page .detail .size-section{width: 50%;}
+.product-page .detail .size-section{width: 60%;}
 .product-page .detail .size-section .sizes{
     display: flex;
     width: 100%;
@@ -91,17 +93,109 @@
     margin-top: 15px;
 }
 .product-page .detail .size-section .sizes button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     color: #222;
     outline: none;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 2px;
     color: rgba(0,0,0,.6);
     border: none;
+    box-shadow: .3px .3px 5px rgba(187, 185, 185, 0.4) ,
+   -.3px -.3px 5px rgba(255, 255, 255,.4);
+   box-sizing: border-box;
 }
 .product-page .detail .size-section .sizes button:hover{
     border: 2px solid #42a2a2;
     
+}
+.product-page .detail .add-to-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+   margin: 15px 0;
+   align-items: center;
+}
+.product-page .detail .add-to-cart button{
+    width: 80%;
+    padding: 15px 0;
+    background: #42a2a2;
+    color: #fff;
+    outline: none;
+    border: 1px solid #42a2a2;
+    /* font-size: 1.1rem; */
+    border-radius: 4px;
+
+}
+.product-page .detail .add-to-cart .heart{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: .5s;
+    border: 2px solid #42a2a2;
+
+}
+.product-page .detail .add-to-cart .heart i{
+    transition: .2s;
+    font-size: 1.5rem;
+}
+.product-page .detail .add-to-cart .heart:hover i{
+    /* transform: scale(1.2); */
+}
+.product-page .detail .add-to-cart .added i{
+        color:#fbd249
+}
+.product-page .detail .input{
+    width: 100%;
+    position: relative;
+}
+.product-page .detail .input input{
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #999;
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.product-page .detail .input input:focus{
+    border-color:#000;
+}
+.product-page .detail .input span{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: #999;
+    transition: .2s;
+}
+.product-page .detail .input input:focus + .pin{
+    top: -5px;
+    background-color: #fff;
+    /* padding: 0 3px; */
+    color: #000;
+    /* padding-left: 5px; */
+}
+.product-page .detail .input span.pin{
+
+pointer-events:none;
+}
+.product-page .detail .input span.check{
+    left: 230px;
+    color: #42a2a2;
+    font-weight: 600;
+    cursor: pointer;
+}
+.product-page .detail .cod{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.product-page .detail .cod img{
+    object-fit: cover;
 }
