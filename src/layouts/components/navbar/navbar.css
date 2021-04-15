@@ -42,7 +42,16 @@ nav .nav2 {
 }
 nav .nav2 .dropdownwrapper {
   display: flex;
+  position: relative;
   align-items: center;
+}
+nav .nav2 .dropdownwrapper .clone {
+  font-size: 14px;
+  position: absolute;
+  font-weight: bold;
+  text-transform: capitalize;
+  bottom: 4px;
+  left: 65px;
 }
 nav .nav2 .dropdownwrapper .ccaattoo {
   position: relative;

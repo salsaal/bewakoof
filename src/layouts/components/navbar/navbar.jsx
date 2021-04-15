@@ -34,6 +34,7 @@ export default class Navbar extends React.Component {
                 alt=""
               />
             </a>
+            <p className="clone">clone</p>
             <div className="ccaattoo">
               <a href="/products/men">Men</a>
               <div className="dropdown">
